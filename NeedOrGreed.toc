@@ -1,0 +1,5 @@
+## Interface: 50400
+## Title: NeedOrGreed
+## Notes: Item Tracker for specified recipes
+NeedOrGreed.lua
+NeedOrGreed.xml
