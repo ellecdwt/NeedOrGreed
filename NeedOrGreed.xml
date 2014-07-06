@@ -3,11 +3,11 @@
                    xsi:schemaLocation="http://www.blizzard.com/wow/ui/ 
                    ..\..\FrameXML\UI.xsd">
 
-  <Script File="HelloWorld.lua"/>
-  <Frame name="HelloWorldFrame">
+  <Script File="Config.lua"/>
+  <Frame name="ConfigFrame">
     <Scripts>
       <OnLoad>
-        HelloWorld();
+	NeedOrGreedOptions();
       </OnLoad>
     </Scripts>
   </Frame>
