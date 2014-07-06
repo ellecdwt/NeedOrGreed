@@ -1,5 +1,10 @@
 ## Interface: 50400
 ## Title: NeedOrGreed
 ## Notes: Item Tracker for specified recipes
+## Author: Saata
+## SavedVariables: NeedOrGreedDB
+## SavedVariablesPerCharacter: NeedOrGreedPerCharDB
+## X-Category: TradeSkill
+
+
 NeedOrGreed.lua
-NeedOrGreed.xml
