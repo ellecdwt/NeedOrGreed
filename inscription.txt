@@ -1,0 +1,599 @@
+Ivory Ink
+Scroll of Intellect
+Scroll of Spirit
+Scroll of Stamina
+Scroll of Agility
+Scroll of Strength
+Moonglow Ink
+Scroll of Recall
+Enchanting Vellum
+Midnight Ink
+Scroll of Intellect II
+Scroll of Spirit II
+Scroll of Stamina II
+Glyph of the Bear Cub
+Glyph of Arcane Language
+Glyph of Bloodcurdling Shout
+Glyph of Blurred Speed
+Glyph of Borrowed Time
+Glyph of Charm Woodland Creature
+Glyph of Conjure Familiar
+Glyph of Flash of Light
+Glyph of Grace
+Glyph of Lesser Proportion
+Glyph of Mystic Shout
+Glyph of Pick Pocket
+Glyph of Revive Pet
+Glyph of Shadow Ravens
+Glyph of Soul Consumption
+Glyph of Stampede
+Glyph of the Mounted King
+Glyph of the Penguin
+Glyph of the Porcupine
+Glyph of Winged Vengeance
+Vanishing Powder
+Minor Inscription Research
+Glyph of Long Charge
+Glyph of Unending Rage
+Scroll of Strength II
+Glyph of Decoy
+Glyph of Divine Protection
+Glyph of Frost Nova
+Glyph of Misdirection
+Glyph of Power Word: Shield
+Glyph of Rejuvenation
+Hunter's Ink
+Scroll of Agility II
+Glyph of Enraged Speed
+Glyph of Flame Shock
+Glyph of Nature's Grasp
+Glyph of Siphon Life
+Mystic Tome		
+Mysterious Tarot
+Glyph of Holy Wrath
+Glyph of Maul
+Glyph of Momentum
+Glyph of Tame Beast
+Glyph of Evasion
+Glyph of Gag Order
+Glyph of Healthstone	
+Glyph of Psychic Scream		
+Glyph of the Lakestrider		
+Lion's Ink
+Glyph of Aquatic Form
+Glyph of Blooming
+Glyph of Camouflage
+Glyph of Contemplation
+Glyph of Entangling Roots
+Glyph of Ferocious Bite
+Glyph of Ghost Wolf
+Glyph of Gushing Wound
+Glyph of Pick Lock
+Glyph of Seal of Blood
+Glyph of Shackle Undead
+Glyph of Shadow
+Glyph of the Spectral Wolf
+Glyph of Unending Breath
+Glyph of Fade
+Glyph of Illumination
+Glyph of Recovery
+Glyph of Fire Nova
+Glyph of Hamstring
+Glyph of Health Funnel
+Glyph of Healing Touch
+Glyph of Loose Mana
+Glyph of Mending
+Glyph of Cat Form
+Glyph of Double Jeopardy
+Glyph of Expose Armor
+Glyph of Faerie Fire
+Glyph of Inner Sanctum
+Dawnstar Ink
+Glyph of Distract
+Glyph of Eye of Kilrogg
+Glyph of Fear
+Glyph of Healing Storm
+Glyph of Poisons
+Glyph of Rude Interruption
+Glyph of the Monkey
+Glyph of Wind Shear
+Book of Survival
+Tome of the Dawn
+Strange Tarot
+Glyph of Blink
+Glyph of Explosive Trap
+Glyph of Savagery
+Glyph of Divinity
+Glyph of Garrote
+Glyph of Inner Fire
+Glyph of Hoarse Voice
+Glyph of Imp Swarm
+Glyph of Telluric Currents
+Jadefire Ink
+Glyph of Astral Recall
+Glyph of Curse of Exhaustion
+Glyph of Dash
+Glyph of Enslave Demon
+Glyph of Far Sight
+Glyph of Fire From the Heavens
+Glyph of Fireworks
+Glyph of Levitate
+Glyph of No Escape
+Glyph of Rapid Teleportation
+Glyph of Recklessness
+Glyph of Reflective Shield
+Glyph of the Chameleon
+Glyph of the Luminous Charger
+Glyph of the Orca
+Glyph of the Predator
+Glyph of the Treant
+Glyph of Totemic Encirclement
+Glyph of Afterlife
+Glyph of Evocation
+Scroll of Stamina III
+Glyph of Gouge
+Glyph of Renew
+Scroll of Spirit III
+Glyph of Lava Lash
+Glyph of Shadow Bolt
+Scroll of Intellect III
+Glyph of Die by the Sword
+Glyph of Rebirth
+Scroll of Strength III
+Royal Ink
+Glyph of Aspects
+Glyph of Cone of Cold
+Scroll of Agility III
+Royal Guide of Escape Routes
+Tome of Kings
+Arcane Tarot
+Glyph of Blind
+Glyph of Dispel Magic
+Glyph of Final Wrath
+Glyph of Frost Shock
+Glyph of Hemorraghing Veins
+Glyph of Falling Meteor
+Glyph of Hold the Line
+Celestial Ink
+Certificate of Ownership
+Glyph of Aspect of the Pack
+Glyph of Deterrence
+Glyph of Prowl
+Glyph of Safe Fall
+Scroll of Recall II
+Glyph of Consecration
+Scroll of Stamina IV
+Glyph of Redirect	
+Glyph of Smite
+Scroll of Spirit IV
+Glyph of Havoc
+Glyph of Healing Stream Totem
+Scroll of Intellect IV
+Glyph of Guided Stars
+Glyph of Nimble Brew
+Scroll of Strength IV
+Fiery Ink
+Glyph of Disengage
+Glyph of Ice Block
+Scroll of Agility IV
+Book of Stars
+Fire Eater's Guide
+Shadowy Tarot
+Glyph of Avenging Wrath
+Glyph of Purify
+Glyph of Shiv
+Glyph of Totemic Recall
+Glyph of Hindering Strikes
+Glyph of Soulstone
+Shimmering Ink
+Glyph of Counterspell
+Glyph of Bull Rush
+Scroll of Stamina V
+Glyph of Cyclone
+Glyph of Deluge
+Glyph of Binding Heal
+Glyph of Disguise
+Glyph of Shamanistic Rage
+Glyph of Fortifying Brew
+Glyph of Lightspring
+Scroll of Spirit V
+Glyph of Freezing Trap
+Glyph of Shred
+Scroll of Intellect V
+Glyph of Blinding Light
+Glyph of Icebound Fortitude
+Scroll of Strength V
+Glyph of Fear Ward
+Glyph of Shifting Presences
+Scroll of Agility V
+Glyph of Water Shield
+Glyph of Dark Succor
+Glyph of Death Coil
+Darkmoon Card
+Manual of Clouds
+Stormbound Tome
+Ink of the Sky
+Glyph of Icy Touch
+Glyph of Bloodthirst
+Glyph of Death Grip
+Glyph of Sprint
+Ethereal Ink
+Glyph of Death Gate
+Glyph of Death's Embrace
+Glyph of Horn of Winter
+Glyph of Mighty Victory
+Glyph of Path of Frost
+Glyph of Resilient Grip
+Glyph of the Geist
+Scroll of Stamina VI
+Glyph of Leer of the Ox
+Scroll of Spirit VI
+Glyph of Pestilence
+Glyph of Purge
+Glyph of Word of Glory
+Scroll of Intellect VI
+Glyph of Feint
+Glyph of Pillar of Frost
+Scroll of Strength VI
+Glyph of Pounce
+Glyph of Unholy Command
+Scroll of Agility VI
+Glyph of Arcane Power
+Glyph of Holy Nova
+Glyph of Pathfinding
+Glyph of Life Cocoon
+Glyph of Outbreak
+Glyph of Sweeping Strikes
+Darkflame Ink
+Glyph of Carrion Swarm
+Glyph of Mana Gem
+Book of Clever Tricks
+Hellfire Tome
+Greater Darkmoon Card
+Glyph of Cleansing Waters
+Glyph of Fae Silence
+Glyph of Foul Menagerie
+Glyph of Arcane Explosion
+Glyph of Devotion Aura
+Glyph of Ambush
+Glyph of Corpse Explosion
+Glyph of Raging Wind
+Glyph of Vampiric Blood
+Ink of the Sea
+Glyph of Dark Archangel
+Glyph of Frenzied Regeneration
+Glyph of Hand of Gul'dan
+Glyph of Holy Fire
+Glyph of Ice Trap
+Glyph of Intimidating Shout
+Glyph of Mind Freeze
+Glyph of Remove Curse
+Glyph of Soulwell
+Glyph of Stars
+Glyph of Thunderstorm
+Glyph of Thunder Strike
+Glyph of Victorious Throw
+Scroll of Recall III
+Scroll of Stamina VII
+Rituals of the New Moon
+Twilight Tome
+Glyph of Bloody Healing
+Glyph of Paralysis
+Scroll of Spirit VII
+Glyph of Sparring
+Scroll of Intellect VII
+Glyph of Detox
+Scroll of Strength VII
+Glyph of Touch of Karma
+Scroll of Agility VII
+Snowfall Ink
+Glyph of Eternal Resolve
+Glyph of Animal Bond
+Glyph of Scourge Imprisonment
+Glyph of Spiritwalker's Grace
+Glyph of Splitting Ice
+Glyph of Strangulate
+Glyph of the Master Shapeshifter
+Glyph of Turn Evil
+Glyph of Fortuitous Spheres
+Glyph of Targeted Expulsion
+Glyph of Zen Meditation
+Glyph of Spirit Walk
+Glyph of Aimed Shot
+Glyph of Anti-Magic Shell
+Glyph of Army of the Dead
+Glyph of Blade Flurry
+Glyph of Blessed Life
+Glyph of Blitz
+Glyph of Capacitor Totem
+Glyph of Chaining
+Glyph of Chain Lightning
+Glyph of Chains of Ice
+Glyph of Cheap Shot
+Glyph of Circle of Healing
+Glyph of Combustion
+Glyph of Conflagrate
+Glyph of Crittermorph
+Glyph of Curse of the Elements
+Glyph of Dazing Shield
+Glyph of Death and Decay
+Glyph of Demon Training
+Glyph of Denounce
+Glyph of Detection
+Glyph of Distracting Shot
+Glyph of Efflorescence
+Glyph of Endless Wrath
+Glyph of Enduring Infection
+Glyph of Felguard
+Glyph of Fire Elemental Totem
+Glyph of Focused Shield
+Glyph of Frostfire Bolt
+Glyph of Grounding Totem
+Glyph of Healing Wave
+Glyph of Heavy Repercussions
+Glyph of Hemorrhage
+Glyph of Hurricane
+Glyph of Icy Veins
+Glyph of Immediate Truth
+Glyph of Inferno Blast
+Glyph of Innervate
+Glyph of Kick
+Glyph of Liberation
+Glyph of Light of Dawn
+Glyph of Lightwell
+Glyph of Mass Dispel
+Glyph of Mend Pet
+Glyph of Mind Blast
+Glyph of Mortal Strike
+Glyph of Nightmares
+Glyph of Omens
+Glyph of Prayer of Mending
+Glyph of Protector of the Innocent
+Glyph of Psychic Horror
+Glyph of Rapid Displacement
+Glyph of Recuperate
+Glyph of Regrowth
+Glyph of Resonating Power
+Glyph of Shadow Walk
+Glyph of Sharp Knives
+Glyph of Shield Slam
+Glyph of Skull Bash
+Glyph of Smoke Bomb
+Glyph of Snake Trap
+Glyph of Solace
+Glyph of Spellsteal
+Glyph of Spirit of Redemption
+Glyph of Stampede
+Glyph of Subtlety
+Glyph of Templar's Verdict
+Glyph of the Harsh Word
+Glyph of the Stag
+Glyph of Unholy Frenzy
+Glyph of Unstable Affliction
+Glyph of Unstable Earth
+Glyph of Verdant Spheres
+Glyph of Victory Rush
+Glyph of Weakened Soul
+Northrend Inscription Research
+Glyph of Polymorph
+Master's Inscription of the Axe
+Master's Inscription of the Crag
+Master's Inscription of the Pinnacle
+Master's Inscription of the Storm
+Scroll of Stamina VIII
+Faces of Doom
+Iron-bound Tome
+Darkmoon Card of the North
+Scroll of Spirit VIII
+Scroll of Intellect VIII
+Scroll of Strength VIII
+Scroll of Agility VIII
+Glyph of Armors
+Glyph of Aspect of the Cheetah
+Glyph of Barkskin
+Glyph of Beacon of Light
+Glyph of Chimera Shot
+Glyph of Cloak of Shadows
+Glyph of Crimson Banish
+Glyph of Dancing Rune Weapon
+Glyph of Dark Simulacrum
+Glyph of Deadly Momentum
+Glyph of Death From Above
+Glyph of Deep Freeze
+Glyph of Demon Hunting
+Glyph of Demonic Circle
+Glyph of Dispersion
+Glyph of Divine Plea
+Glyph of Divine Storm
+Glyph of Drain Life
+Glyph of Ember Tap
+Glyph of Feral Spirit
+Glyph of Focused Mending
+Glyph of Hammer of the Righteous
+Glyph of Hex
+Glyph of Holy Shock
+Glyph of Illusion
+Glyph of Inquisition
+Glyph of Killing Spree
+Glyph of Leap of Faith
+Glyph of Life Tap
+Glyph of Lightning Shield
+Glyph of Master's Call
+Glyph of Might of Ursoc
+Glyph of Mind Spike
+Glyph of Mirrored Blades
+Glyph of Mirror Image
+Glyph of Penance
+Glyph of Riptide
+Glyph of Scatter Shot
+Glyph of Shield Wall
+Glyph of Slow
+Glyph of Spell Reflection
+Glyph of Stampeding Roar
+Glyph of Stealth
+Glyph of Survival Instincts
+Glyph of the Alabaster Shield
+Glyph of Thunder
+Glyph of Totemic Vigor
+Glyph of Tranquil Grip
+Glyph of Tranquilizing Shot
+Glyph of Tricks of the Trade
+Glyph of Unending Resolve
+Glyph of Vanish
+Glyph of Vendetta
+Glyph of Water Elemental
+Glyph of Whirlwind
+Glyph of Wild Growth
+Blackfallow Ink
+Runescroll of Fortitude
+Glyph of Fetch
+Glyph of Renewing Mists
+Glyph of Spinning Crane Kick
+Scroll of Intellect IX
+Glyph of Aspect of the Beast
+Scroll of Protection IX
+Mysterious Fortune Card
+Glyph of Mind Flay
+Scroll of Spirit IX
+Glyph of Fists of Fury
+Scroll of Stamina IX
+Glyph of Surging Mist
+Scroll of Strength IX
+Glyph of Colossus Smash
+Glyph of Touch of Death
+Scroll of Agility IX
+Dust of Disappearance
+Inferno Ink
+Book of Blood
+Lord Rottington's Pressed Wisp Book
+Origami Slime
+Key to the Planes
+Glyph of Crackling Tiger Lightning
+Origami Rock
+Glyph of Fighting Pose
+Glyph of Flying Serpent Kick
+Felfire Inscription
+Inscription of the Earth Prince
+Lionsmane Inscription
+Swiftsteel Inscription
+Origami Beetle
+Runescroll of Fortitude II
+Forged Documents
+Starlight Ink
+Ink of Dreams
+Tome of the Clear Mind
+Glyph of Angels
+Glyph of Astral Fixation
+Glyph of Condensation
+Glyph of Divine Shield
+Glyph of Elemental Familiars
+Glyph of Enduring Deceit
+Glyph of Eternal Earth
+Glyph of Evaporation
+Glyph of Festering Blood
+Glyph of Flaming Serpent
+Glyph of Hand of Sacrifice
+Glyph of Headhunting
+Glyph of Impaling Throws
+Glyph of Improved Distraction
+Glyph of Inspired Hymns
+Glyph of Lingering Ancestors
+Glyph of Loud Horn
+Glyph of One with Nature
+Glyph of Pillar of Light
+Glyph of Purging
+Glyph of Rain of Frogs
+Glyph of Regenerative Magic
+Glyph of Shifted Appearances
+Glyph of Spirit Raptors
+Glyph of Spirit Wolf
+Glyph of Swift Death
+Glyph of the Compy
+Glyph of the Executor
+Glyph of the Exorcist
+Glyph of the Lean Pack
+Glyph of the Long Winter
+Glyph of the Raging Whirlwind
+Glyph of the Sha
+Glyph of the Skeleton
+Glyph of the Sprouting Mushroom
+Glyph of the Subtle Defender
+Glyph of the Unbound Elemental
+Glyph of the Watchful Eye
+Glyph of the Weaponmaster
+Runed Staff
+Battle Tome
+Divine Companion
+Dungeoneering Guide
+Rosethorn Staff
+Silver Inlaid Staff
+Darkmoon Card of Destruction
+Scroll of Wisdom
+Crane Wing Inscription
+Ox Horn Inscription
+Tiger Claw Inscription
+Tiger Fang Inscription
+Ghost Iron Staff
+Inscribed Fan
+Rain Poppy Staff
+Inscribed Jade Fan
+Inscribed Red Fan
+Inscribed Crane Staff
+Inscribed Serpent Staff
+Inscribed Tiger Staff
+Greater Crane Wing Inscription
+Greater Ox Horn Inscription
+Greater Tiger Claw Inscription
+Greater Tiger Fang Inscription
+Secret Crane Wing Inscription
+Secret Ox Horn Inscription
+Secret Tiger Claw Inscription
+Secret Tiger Fang Inscription
+Runescroll of Fortitude III
+Glyph of Black Ice
+Glyph of Blackout Kick
+Glyph of Bladed Judgment
+Glyph of Breath of Fire
+Glyph of Burning Anger
+Glyph of Clash
+Glyph of Confession
+Glyph of Crow Feast
+Glyph of Direction
+Glyph of Enduring Healing Sphere
+Glyph of Focused Wrath
+Glyph of Gateway Attunement
+Glyph of Guard
+Glyph of Holy Resurrection
+Glyph of Honor
+Glyph of Incite
+Glyph of Jab
+Glyph of Mana Tea
+Glyph of Marking
+Glyph of Mass Exorcism
+Glyph of Rapid Rolling
+Glyph of Righteous Retreat
+Glyph of Rising Tiger Kick
+Glyph of Shadow Word: Death
+Glyph of Shadowy Friends
+Glyph of Spinning Fire Blossom
+Glyph of Spirit Roll
+Glyph of the Battle Healer
+Glyph of the Blazing Trail
+Glyph of the Cheetah
+Glyph of the Falling Avenger
+Glyph of the Heavens
+Glyph of the Val'kyr
+Glyph of Transcendence
+Glyph of Vampiric Embrace
+Glyph of Water Roll
+Glyph of Zen Flight
+Crafted Malevolent Gladiator's Medallion of Tenacity
+Commissioned Painting		
+Engraved Jade Disk
+Inscribed Monument
+Portrait of Madam Goya
+Darkmoon Card of Mists
+Chi-ji Kite
+Origami Crane
+Origami Frog
+Yu'lon Kite
