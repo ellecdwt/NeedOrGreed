@@ -1,0 +1,363 @@
+Runed Copper Rod
+Enchant Bracer - Minor Health
+Enchant Bracer - Minor Dodge
+Lesser Magic Wand
+Enchant Chest - Minor Health
+Enchant Chest - Minor Mana
+Enchant Chest - Minor Absorption
+Minor Wizard Oil
+Enchant Bracer - Minor Stamina
+Enchant Bracer - Minor Spirit
+Enchant Chest - Lesser Health
+Greater Magic Wand
+Enchant Cloak - Minor Protection
+Enchant Bracer - Minor Agility
+Enchant Bracer - Minor Strength
+Enchant Chest - Lesser Mana
+Enchant Weapon - Minor Beastslayer
+Enchant Weapon - Minor Striking
+Enchant 2H Weapon - Lesser Intellect
+Enchant 2H Weapon - Minor Impact
+Enchant Shield - Minor Stamina
+Enchant 2H Weapon - Lesser Spirit
+Enchant Cloak - Minor Agility
+Enchant Cloak - Lesser Protection
+Enchant Shield - Lesser Protection
+Enchant Bracer - Lesser Spirit
+Enchant Chest - Health
+Enchant Boots - Minor Stamina
+Enchant Boots - Minor Agility
+Enchant Bracer - Lesser Stamina
+Enchant Shield - Lesser Spirit
+Enchant Bracer - Lesser Strength
+Enchant Chest - Lesser Absorption
+Enchant Weapon - Lesser Striking
+Enchant 2H Weapon - Lesser Impact
+Enchant Chest - Mana
+Enchant Gloves - Fishing
+Enchant Gloves - Herbalism
+Enchant Gloves - Mining
+Minor Mana Oil
+Enchant Bracer - Lesser Intellect
+Enchant Chest - Minor Stats
+Lesser Mystic Wand
+Enchant Cloak - Defense
+Enchant Shield - Lesser Stamina
+Enchant Boots - Lesser Agility
+Enchant Chest - Greater Health
+Enchant Bracer - Spirit
+Enchant Boots - Lesser Stamina
+Enchant Bracer - Lesser Dodge
+Enchant Bracer - Stamina
+Greater Mystic Wand
+Enchant Weapon - Lesser Beastslayer
+Enchant Weapon - Lesser Elemental Slayer
+Enchant Bracer - Strength
+Enchant Shield - Spirit
+Enchant Chest - Greater Mana
+Enchant Boots - Lesser Spirit
+Enchant Weapon - Winter's Might	
+Enchant Shield - Lesser Parry
+Enchant Weapon - Striking
+Lesser Wizard Oil
+Enchant 2H Weapon - Impact
+Enchant Chest - Lesser Stats
+Enchant Gloves - Skinning
+Enchant Cloak - Greater Defense
+Enchant Bracer - Intellect
+Enchant Gloves - Agility
+Enchant Shield - Stamina
+Enchant Boots - Stamina
+Enchant Gloves - Advanced Mining
+Enchant Bracer - Greater Spirit
+Enchant Chest - Superior Health
+Enchant Boots - Lesser Accuracy
+Enchant Boots - Minor Speed
+Enchant Cloak - Lesser Agility
+Enchant Gloves - Advanced Herbalism
+Enchant Gloves - Strength
+Enchant Chest - Superior Mana
+Enchant Shield - Greater Spirit
+Enchant Weapon - Demonslaying
+Enchant Boots - Agility
+Enchant Bracer - Dodge
+Enchant 2H Weapon - Greater Impact
+Enchant Bracer - Greater Strength
+Enchant Bracer - Greater Stamina
+Enchant Chest - Stats
+Enchant Weapon - Greater Striking
+Enchanted Leather
+Enchanted Thorium Bar
+Lesser Mana Oil
+Enchant Gloves - Minor Haste
+Enchant Gloves - Riding Skill
+Enchant Bracer - Greater Intellect
+Enchant Boots - Greater Stamina
+Smoking Heart of the Mountain
+Enchant Shield - Greater Stamina
+Enchant Weapon - Fiery Weapon
+Enchant Bracer - Superior Spirit
+Enchant Gloves - Greater Agility
+Wizard Oil
+Enchant Boots - Spirit
+Enchant Chest - Major Health
+Enchant Shield - Vitality
+Enchant Cloak - Superior Defense
+Enchant Weapon - Icy Chill
+Enchant 2H Weapon - Agility
+Enchant Bracer - Mana Regeneration
+Enchant Chest - Major Mana
+Enchant Weapon - Agility
+Enchant Weapon - Strength
+Enchant 2H Weapon - Superior Impact
+Enchant Boots - Greater Agility
+Enchant Bracer - Superior Strength
+Enchant Gloves - Greater Strength
+Enchant Weapon - Unholy Weapon
+Nexus Transformation
+Brilliant Mana Oil
+Brilliant Wizard Oil
+Enchant 2H Weapon - Major Intellect
+Enchant 2H Weapon - Major Spirit
+Enchant Bracer - Healing Power
+Enchant Bracer - Lesser Assault
+Enchant Bracer - Superior Stamina
+Enchant Chest - Greater Stats
+Enchant Chest - Restore Mana Prime
+Enchant Cloak - Dodge
+Enchant Cloak - Stealth
+Enchant Cloak - Subtlety
+Enchant Gloves - Fire Power
+Enchant Gloves - Frost Power
+Enchant Gloves - Healing Power
+Enchant Gloves - Shadow Power
+Enchant Gloves - Superior Agility
+Enchant Gloves - Threat
+Enchant Weapon - Crusader
+Enchant Weapon - Healing Power
+Enchant Weapon - Lifestealing
+Enchant Weapon - Mighty Intellect
+Enchant Weapon - Mighty Spirit
+Enchant Weapon - Spellpower
+Enchant Weapon - Superior Striking
+Enchant Boots - Vitality
+Enchant Bracer - Brawn
+Enchant Bracer - Major Intellect
+Enchant Gloves - Blasting
+Superior Mana Oil
+Enchant Cloak - Greater Agility
+Enchant Cloak - Major Armor
+Enchant Gloves - Assault
+Enchant Shield - Lesser Dodge
+Enchant Bracer - Stats
+Enchant Chest - Exceptional Health
+Enchant Boots - Fortitude
+Enchant Bracer - Greater Dodge
+Enchant Chest - Major Spirit
+Prismatic Sphere
+Enchant Bracer - Superior Healing
+Enchant Cloak - PvP Power
+Enchant Shield - Intellect
+Enchant Shield - Major Stamina
+Enchant Shield - Resilience
+Large Prismatic Shard
+Small Prismatic Shard
+Enchant Bracer - Restore Mana Prime
+Superior Wizard Oil
+Enchant Boots - Dexterity
+Enchant Gloves - Major Strength
+Enchant Shield - Parry
+Enchant Weapon - Major Intellect
+Enchant Weapon - Major Striking
+Enchant Chest - Exceptional Stats
+Enchant Chest - Major Resilience
+Enchant Weapon - Deathfrost
+Enchant Weapon - Greater Agility
+Void Sphere
+Enchant 2H Weapon - Savagery
+Enchant Bracer - Fortitude
+Enchant Gloves - Major Healing
+Enchant Weapon - Major Healing
+Enchant Weapon - Major Spellpower
+Enchant Weapon - Potency
+Enchant Chest - Exceptional Mana
+Enchant Cloak - Speed
+Enchant 2H Weapon - Major Agility
+Enchant Boots - Boar's Speed
+Enchant Boots - Cat's Swiftness
+Enchant Gloves - Major Spellpower
+Enchant Gloves - Precise Strikes
+Enchant Ring - Minor Intellect
+Enchant Ring - Striking
+Enchant Weapon - Battlemaster
+Enchant Weapon - Spellsurge
+Enchant Bracer - Spellpower
+Enchant Chest - Dodge
+Enchant Bracer - Assault
+Enchant Gloves - Exceptional Spellpower
+Enchant Boots - Surefooted
+Enchant Chest - Super Stats
+Void Shatter
+Enchant Cloak - Greater Dodge
+Enchant Ring - Stats
+Enchant Weapon - Executioner
+Enchant Weapon - Mongoose
+Enchant Weapon - Soulfrost
+Enchant Bracer - Exceptional Intellect
+Enchant Gloves - Angler
+Enchant Boots - Assault
+Enchant Weapon - Sunfire
+Enchant Gloves - Gatherer
+Enchant Weapon - Greater Potency
+Enchant Boots - Icewalker
+Enchant Staff - Spellpower
+Enchant Boots - Greater Fortitude
+Enchant 2H Weapon - Greater Savagery
+Abyssal Shatter
+Enchant Cloak - Minor Power
+Enchant Bracer - Greater Spellpower
+Enchant Chest - Mighty Health
+Enchant Cloak - Superior Agility
+Enchant Gloves - Greater Assault
+Enchant Shield - Greater Intellect
+Enchant Weapon - Exceptional Spellpower
+Enchant Ring - Assault
+Enchant Ring - Lesser Intellect
+Enchant Ring - Lesser Stamina
+Enchant Bracer - Greater Stats
+Enchant Chest - Greater Dodge
+Enchant Boots - Greater Vitality
+Enchant Gloves - Expertise
+Enchant Boots - Greater Spirit
+Enchant Gloves - Precision
+Enchant Weapon - Exceptional Agility
+Enchant Weapon - Exceptional Spirit
+Enchant Chest - Exceptional Resilience
+Enchant Boots - Superior Agility
+Enchant Bracer - Expertise
+Enchant Gloves - Major Agility
+Enchant Bracer - Major Spirit
+Enchant Chest - Greater Mana Restoration
+Enchant Cloak - Major Agility
+Enchant Shield - Dodge
+Enchant Chest - Super Health
+Enchant Gloves - Crusher
+Enchant Weapon - Icebreaker
+Enchant Weapon - Lifeward
+Enchant Boots - Earthen Vitality
+Enchant Chest - Mighty Stats
+Enchant Gloves - Mastery
+Enchant 2H Weapon - Massacre
+Enchant 2H Weapon - Scourgebane
+Enchant Bracer - Greater Assault
+Enchant Cloak - Greater Speed
+Enchant Cloak - Mighty Stamina
+Enchant Weapon - Giant Slayer
+Enchant Cloak - Superior Dodge
+Enchant Gloves - Armsman
+Enchant Weapon - Mighty Spellpower
+Enchant Weapon - Superior Potency
+Enchant Bracer - Speed
+Enchant Cloak - Lesser Power
+Enchant Boots - Greater Assault
+Enchant Boots - Tuskarr's Vitality
+Enchant Bracer - Superior Spellpower
+Enchant Chest - Powerful Stats
+Enchant Cloak - Shadow Armor
+Enchant Cloak - Wisdom
+Enchant Weapon - Accuracy
+Enchant Weapon - Berserking		
+Enchant Weapon - Black Magic
+Enchant Staff - Greater Spellpower
+Enchant Weapon - Blade Ward
+Enchant Weapon - Blood Draining
+Enchant Weapon - Avalanche
+Enchant Weapon - Mending
+Enchant Bracer - Major Stamina
+Enchant Boots - Haste
+Enchant Gloves - Haste
+Enchant Bracer - Critical Strike
+Enchant Chest - Stamina
+Enchant Cloak - Intellect
+Enchant Shield - Protection
+Enchant 2H Weapon - Mighty Agility
+Enchant Gloves - Exceptional Strength
+Enchant Weapon - Elemental Slayer
+Enchant Ring - Agility
+Enchant Ring - Intellect
+Enchant Ring - Stamina
+Enchant Ring - Strength
+Enchant Boots - Major Agility
+Enchant Chest - Mighty Resilience
+Enchant Gloves - Greater Expertise
+Enchant Weapon - Hurricane
+Enchant Shield - Mastery
+Enchant Weapon - Heartsong
+Enchant Bracer - Superior Dodge
+Enchant Cloak - Critical Strike
+Enchant Bracer - Precision
+Enchant Chest - Exceptional Spirit
+Mysterious Essence
+Enchant Cloak - Protection
+Enchant Off-Hand - Superior Intellect
+Enchant Bracer - Mastery
+Enchant Cloak - Superior Critical Strike
+Enchant Boots - Precision
+Enchant Bracer - Exceptional Spirit
+Enchant Boots - Mastery
+Enchant Bracer - Greater Expertise
+Enchant Cloak - Greater Intellect
+Maelstrom Shatter
+Enchant Bracer - Agility
+Enchant Bracer - Major Strength	
+Enchant Bracer - Mighty Intellect
+Enchanted Lantern
+Magic Lamp
+Enchant Boots - Assassin's Step
+Enchant Boots - Lavawalker
+Enchant Bracer - Greater Critical Strike
+Enchant Bracer - Greater Speed	
+Enchant Chest - Greater Stamina
+Enchant Chest - Peerless Stats
+Enchant Cloak - Greater Critical Strike
+Enchant Gloves - Greater Mastery
+Enchant Gloves - Mighty Strength
+Enchant Weapon - Landslide	
+Enchant Weapon - Power Torrent
+Enchant Weapon - Windwalk
+Enchant Boots - Greater Precision
+Enchant Bracer - Major Dodge
+Enchant Chest - Mighty Spirit
+Enchant Chest - Super Resilience
+Enchant Cloak - Superior Intellect
+Enchant Gloves - Greater Haste
+Enchant Weapon - Elemental Force
+Mysterious Diffusion
+Ethereal Shard
+Enchant Ring - Greater Agility
+Enchant Ring - Greater Intellect
+Enchant Ring - Greater Stamina
+Enchant Ring - Greater Strength
+Enchant Boots - Blurred Speed
+Enchant Boots - Greater Haste
+Enchant Chest - Superior Stamina
+Enchant Cloak - Accuracy
+Enchant Gloves - Superior Expertise
+Enchant Weapon - Windsong
+Enchant Boots - Pandaren's Step
+Enchant Chest - Glorious Stats
+Enchant Cloak - Greater Protection
+Enchant Gloves - Superior Mastery
+Enchant Gloves - Super Strength
+Enchant Off-Hand - Major Intellect
+Enchant Shield - Greater Parry
+Enchant Weapon - Colossus
+Ethereal Shatter
+Sha Crystal
+Sha Shatter
+Enchant Bracer - Exceptional Strength
+Enchant Bracer - Greater Agility
+Enchant Bracer - Super Intellect
+Enchant Weapon - Dancing Steel
+Enchant Weapon - Jade Spirit
+Enchant Weapon - River's Song
