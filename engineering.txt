@@ -71,8 +71,8 @@ Mechanical Repair Kit
 Unstable Trigger
 Gnomish Cloaking Device
 Mechanical Dragonling
-Inlaid Mithril Cylinder Plans
-Goblin Rocket Fuel Recipe
+Inlaid Mithril Cylinder
+Goblin Rocket Fuel
 Lil' Smoky		
 Pet Bombling
 Goblin Sapper Charge
