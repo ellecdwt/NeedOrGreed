@@ -36,5 +36,20 @@ account_wide_checkbox.tooltipText = "Alert for items that other characters are l
 -- text label for the check button
 local account_wide_checkbox_label = _G[account_wide_checkbox:GetName() .. "Text"]:SetText("Account Wide")
 
+-- Add checkboxes and tabs for the Tradeskills lists
+local alchemybox = CreateFrame("CheckButton", "AlchemyCheck", panel, "InterfaceOptionsCheckButtonTemplate")
+alchemybox:SetPoint("TOP", "EnableSound", 0, -50)
+local alchemy = CreateFrame("Button", "AlchemyTab", panel, "TabButtonTemplate")
+alchemy:SetPoint("TOP", "EnableSound", 30, -40)
+alchemy:SetText("     Alchemy")
+PanelTemplates_TabResize(alchemy, 0)
+
+local blacksmithbox = CreateFrame("CheckButton", "BlacksmithCheck", panel, "InterfaceOptionsCheckButtonTemplate")
+blacksmithbox:SetPoint("TOP", "EnableSound", 88, -50)
+local blacksmith = CreateFrame("Button", "BlacksmithTab", panel, "TabButtonTemplate")
+blacksmith:SetPoint("TOP", "EnableSound", 130, -40)
+blacksmith:SetText("     Blacksmithing")
+PanelTemplates_TabResize(blacksmith, 0)
+
 
 InterfaceOptions_AddCategory(panel)
