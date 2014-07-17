@@ -36,7 +36,7 @@ account_wide_checkbox.tooltipText = "Alert for items that other characters are l
 -- text label for the check button
 local account_wide_checkbox_label = _G[account_wide_checkbox:GetName() .. "Text"]:SetText("Account Wide")
 
--- Add checkboxes and tabs for the Tradeskills lists
+-- Add checkbuttons and tabs for the Tradeskills lists
 local alchemybox = CreateFrame("CheckButton", "AlchemyCheck", panel, "UICheckButtonTemplate")
 alchemybox:SetSize(20, 20)
 alchemybox:SetPoint("TOP", "EnableSound", 0, -53)
@@ -52,6 +52,30 @@ local blacksmith = CreateFrame("Button", "BlacksmithTab", panel, "TabButtonTempl
 blacksmith:SetPoint("TOP", "EnableSound", 130, -40)
 blacksmith:SetText("    Blacksmithing")
 PanelTemplates_TabResize(blacksmith, 0)
+
+local cookingbox = CreateFrame("CheckButton", "CookingCheck", panel, "UICheckButtonTemplate")
+cookingbox:SetSize(20, 20)
+cookingbox:SetPoint("TOP", "EnableSound", 200, -53)
+local cooking = CreateFrame("Button", "CookingTab", panel, "TabButtonTemplate")
+cooking:SetPoint("TOP", "EnableSound", 228, -40)
+cooking:SetText("    Cooking")
+PanelTemplates_TabResize(cooking, 0)
+
+local enchantingbox = CreateFrame("CheckButton", "EnchantingCheck", panel, "UICheckButtonTemplate")
+enchantingbox:SetSize(20, 20)
+enchantingbox:SetPoint("TOP", "EnableSound", 285, -53)
+local enchanting = CreateFrame("Button", "EnchantingTab", panel, "TabButtonTemplate")
+enchanting:SetPoint("TOP", "EnableSound", 318, -40)
+enchanting:SetText("    Enchanting")
+PanelTemplates_TabResize(enchanting, 0)
+
+local engineeringbox = CreateFrame("CheckButton", "EngineeringCheck", panel, "UICheckButtonTemplate")
+engineeringbox:SetSize(20, 20)
+engineeringbox:SetPoint("TOP", "EnableSound", 381, -53)
+local engineering = CreateFrame("Button", "EngineeringTab", panel, "TabButtonTemplate")
+engineering:SetPoint("TOP", "EnableSound", 415, -40)
+engineering:SetText("    Engineering")
+PanelTemplates_TabResize(engineering, 0)
 
 
 InterfaceOptions_AddCategory(panel)
