@@ -11,7 +11,7 @@
  local Tailoring = {}
  
  -- Load alchemy items
- local file = assert(io.input("alchemy.txt"))
+ local file = assert(io.input("Items/alchemy.txt"))
  
  for recipe in io.lines() do
    Alchemy[recipe] = {"test1", "test2"}
@@ -23,7 +23,7 @@
  print(MainDB[1]["Vial of the Sands"][2])
  
  -- load blacksmithing items
- file = assert(io.input("blacksmithing.txt"))
+ file = assert(io.input("Items/blacksmithing.txt"))
  for recipe in io.lines() do
    Blacksmithing[recipe] = {"test3", "test4"}
  end
@@ -34,7 +34,7 @@
  print(MainDB[2]["Accelerated Balanced Trillium Ingot"][2])
  
  -- load cooking items
- file = assert(io.input("cooking.txt"))
+ file = assert(io.input("Items/cooking.txt"))
  for recipe in io.lines() do
    Cooking[recipe] = {"test5", "test6"}
  end
@@ -46,7 +46,7 @@
  
  
  -- load enchanting items
- file = assert(io.input("enchanting.txt"))
+ file = assert(io.input("Items/enchanting.txt"))
  for recipe in io.lines() do
    Enchanting[recipe] = {"test7", "test8"}
  end
@@ -57,7 +57,7 @@
  print(MainDB[4]["Enchant Chest - Peerless Stats"][2])
  
  -- load engineering items
- file = assert(io.input("engineering.txt"))
+ file = assert(io.input("Items/engineering.txt"))
  for recipe in io.lines() do
    Engineering[recipe] = {"test9", "test10"}
  end
@@ -68,7 +68,7 @@
  print(MainDB[5]["Goblin Rocket Fuel"][2])
  
  -- load inscription items
- file = assert(io.input("inscription.txt"))
+ file = assert(io.input("Items/inscription.txt"))
  for recipe in io.lines() do
    Inscription[recipe] = {"test11", "test12"}
  end
@@ -79,7 +79,7 @@
  print(MainDB[6]["Battle Tome"][2])
  
  -- load jewelcrafting items
- file = assert(io.input("jewelcrafting.txt"))
+ file = assert(io.input("Items/jewelcrafting.txt"))
  for recipe in io.lines() do
    Jewelcrafting[recipe] = {"test13", "test14"}
  end
@@ -90,7 +90,7 @@
  print(MainDB[7]["Destructive Primal Diamond"][2])
  
  -- load leatherworking items
- file = assert(io.input("leatherworking.txt"))
+ file = assert(io.input("Items/leatherworking.txt"))
  for recipe in io.lines() do
    Leatherworking[recipe] = {"test15", "test16"}
  end
@@ -101,7 +101,7 @@
  print(MainDB[8]["Dark Leather Tunic"][2])
  
  -- load tailoring items
- file = assert(io.input("tailoring.txt"))
+ file = assert(io.input("Items/tailoring.txt"))
  for recipe in io.lines() do
    Tailoring[recipe] = {"test17", "test18"}
  end
