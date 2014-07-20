@@ -36,7 +36,7 @@ account_wide_checkbox.tooltipText = "Alert for items that other characters are l
 -- text label for the check button
 local account_wide_checkbox_label = _G[account_wide_checkbox:GetName() .. "Text"]:SetText("Account Wide")
 
--- Add checkbuttons and tabs for the Tradeskills lists
+-- Add checkbuttons and tabs for the Tradeskills lists and custom
 local alchemybox = CreateFrame("CheckButton", "AlchemyCheck", panel, "UICheckButtonTemplate")
 alchemybox:SetSize(20, 20)
 alchemybox:SetPoint("TOP", "EnableSound", 0, -53)
@@ -76,6 +76,46 @@ local engineering = CreateFrame("Button", "EngineeringTab", panel, "TabButtonTem
 engineering:SetPoint("TOP", "EnableSound", 415, -40)
 engineering:SetText("    Engineering")
 PanelTemplates_TabResize(engineering, 0)
+
+local inscriptionbox = CreateFrame("CheckButton", "InscriptionCheck", panel, "UICheckButtonTemplate")
+inscriptionbox:SetSize(20, 20)
+inscriptionbox:SetPoint("TOP", "EnableSound", 0, -80)
+local inscription = CreateFrame("Button", "InscriptionTab", panel, "TabButtonTemplate")
+inscription:SetPoint("TOP", "EnableSound", 30, -67)
+inscription:SetText("    Inscription")
+PanelTemplates_TabResize(inscription, 0)
+
+local jewelcraftingbox = CreateFrame("CheckButton", "JewelcraftingCheck", panel, "UICheckButtonTemplate")
+jewelcraftingbox:SetSize(20, 20)
+jewelcraftingbox:SetPoint("TOP", "EnableSound", 90, -80)
+local jewelcrafting = CreateFrame("Button", "JewelcraftingTab", panel, "TabButtonTemplate")
+jewelcrafting:SetPoint("TOP", "EnableSound", 130, -67)
+jewelcrafting:SetText("    Jewelcrafting")
+PanelTemplates_TabResize(jewelcrafting, 0)
+
+local leatherworkingbox = CreateFrame("CheckButton", "LeatherworkingCheck", panel, "UICheckButtonTemplate")
+leatherworkingbox:SetSize(20, 20)
+leatherworkingbox:SetPoint("TOP", "EnableSound", 199, -80)
+local leatherworking = CreateFrame("Button", "LeatherworkingTab", panel, "TabButtonTemplate")
+leatherworking:SetPoint("TOP", "EnableSound", 243, -67)
+leatherworking:SetText("    Leatherworking")
+PanelTemplates_TabResize(leatherworking, 0)
+
+local tailoringbox = CreateFrame("CheckButton", "TailoringCheck", panel, "UICheckButtonTemplate")
+tailoringbox:SetSize(20, 20)
+tailoringbox:SetPoint("TOP", "EnableSound", 317, -80)
+local tailoring = CreateFrame("Button", "TailoringTab", panel, "TabButtonTemplate")
+tailoring:SetPoint("TOP", "EnableSound", 344, -67)
+tailoring:SetText("    Tailoring")
+PanelTemplates_TabResize(tailoring, 0)
+
+local custombox = CreateFrame("CheckButton", "CustomCheck", panel, "UICheckButtonTemplate")
+custombox:SetSize(20, 20)
+custombox:SetPoint("TOP", "EnableSound", 400, -80)
+local custom = CreateFrame("Button", "CustomTab", panel, "TabButtonTemplate")
+custom:SetPoint("TOP", "EnableSound", 425, -67)
+custom:SetText("    Custom")
+PanelTemplates_TabResize(custom, 0)
 
 
 InterfaceOptions_AddCategory(panel)
