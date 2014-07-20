@@ -117,5 +117,32 @@ custom:SetPoint("TOP", "EnableSound", 425, -67)
 custom:SetText("    Custom")
 PanelTemplates_TabResize(custom, 0)
 
+-- Create the wrapper frame for the scrolling items
+local scrollwrap = CreateFrame("ScrollFrame", "Wrap", panel)
+scrollwrap:SetPoint("CENTER", panel, 4, -16)
+local texture = scrollwrap:CreateTexture()
+texture:SetAllPoints()
+texture:SetTexture(0,0,0,1)
+local test = scrollwrap:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
+test:SetText("I'M HERE!!") 
+
+-- Create the scrollbar for the scrolling content
+--local scrollbar = CreateFrame("TOPLEFT", "Scrollbar", scrollwrap, "UIPanelScrollBarTemplate")
+--scrollbar:SetPoint("TOPLEFT", panel, 4, -16)
+--scrollbar:SetWidth(16)
+--scrollbar:SetMinMaxValues(1,1000)
+--scrollbar:SetValueStep(1)
+--scrollbar:SetValue(0)
+-- this script allows the scrolling
+--scrollbar:SetScript("OnValueChanged", function (self, value) self:GetParent():SetVerticalScroll(value) end)
+
+-- Create the content frame to pu thte items in
+local content = CreateFrame("Frame", "Content", scrollwrap)
+content:SetSize(128, 128)
+
+local test = content:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
+test:SetText("I'M HERE!!")
+
+scrollwrap:SetScrollChild(content)
 
 InterfaceOptions_AddCategory(panel)
