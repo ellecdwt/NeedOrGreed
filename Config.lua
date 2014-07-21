@@ -1,6 +1,8 @@
 -- Create main frame for information text
-local panel = CreateFrame("FRAME")
+local panel = CreateFrame("FRAME", nil, InterfaceOptionsFramePanelContainer)
 panel.name = GetAddOnMetadata("NeedOrGreed", "Title")
+panel:SetPoint("CENTER") 
+panel:Hide()
 
 -- This is the Main title of the interface options frame
 local panel_title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
@@ -119,29 +121,32 @@ PanelTemplates_TabResize(custom, 0)
 
 -- Create the wrapper frame for the scrolling items
 local scrollwrap = CreateFrame("ScrollFrame", "Wrap", panel)
-scrollwrap:SetPoint("CENTER", panel, 4, -16)
-local texture = scrollwrap:CreateTexture()
-texture:SetAllPoints()
-texture:SetTexture(0,0,0,1)
-local test = scrollwrap:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-test:SetText("I'M HERE!!") 
+scrollwrap:SetPoint("CENTER", panel, 0, 0)
+scrollwrap:SetBackdrop({
+	bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background"
+}) 
+
 
 -- Create the scrollbar for the scrolling content
---local scrollbar = CreateFrame("TOPLEFT", "Scrollbar", scrollwrap, "UIPanelScrollBarTemplate")
---scrollbar:SetPoint("TOPLEFT", panel, 4, -16)
---scrollbar:SetWidth(16)
---scrollbar:SetMinMaxValues(1,1000)
---scrollbar:SetValueStep(1)
---scrollbar:SetValue(0)
+local scrollbar = CreateFrame("Slider", "ScrollBar", scrollwrap, "UIPanelScrollBarTemplate")
+scrollbar:SetPoint("CENTER", panel, 0, 0)
+scrollbar:SetOrientation("VERTICAL")
+scrollbar:SetSize(16, 128)
+scrollbar:SetMinMaxValues(0, 872)
+scrollbar:SetValue(0)
+local texture = scrollbar:CreateTexture(nil, "BACKGROUND")
+texture:SetAllPoints()
+texture:SetTexture(0, 0, 0, 0.5)
 -- this script allows the scrolling
---scrollbar:SetScript("OnValueChanged", function (self, value) self:GetParent():SetVerticalScroll(value) end)
+scrollbar:SetScript("OnValueChanged", function (self) scrollwrap:SetVerticalScroll(self:GetValue()) end)
 
--- Create the content frame to pu thte items in
+-- Create the content frame to put the items in
 local content = CreateFrame("Frame", "Content", scrollwrap)
 content:SetSize(128, 128)
 
 local test = content:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 test:SetText("I'M HERE!!")
+test:SetPoint("TOPLEFT")
 
 scrollwrap:SetScrollChild(content)
 
