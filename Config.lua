@@ -144,10 +144,35 @@ scrollbar:SetScript("OnValueChanged", function (self) scrollwrap:SetVerticalScro
 local content = CreateFrame("Frame", "Content", scrollwrap)
 content:SetSize(128, 128)
 
+-- test for filling content. will be replaced by tables of item names
 local test = content:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 test:SetText("I'M HERE!!")
 test:SetPoint("TOPLEFT")
 
+-- set the content as the child of the wrapper
 scrollwrap:SetScrollChild(content)
+
+-- label for the item name editbox
+local itemlabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+itemlabel:SetPoint("TOPLEFT", panel, 75, -492)
+itemlabel:SetText("Item Name")
+
+-- edit box for user to enter item names to track. autofocus is turned off
+local itemname = CreateFrame("EditBox", "ItemName", panel, "InputBoxTemplate")
+itemname:SetPoint("TOPLEFT", panel, 155, -490)
+itemname:SetSize(200, 16)
+itemname:SetAutoFocus(false)
+
+-- add button to add whatever is entered in the textbox
+local addbutton = CreateFrame("Button", "Add", panel, "UIPanelButtonTemplate")
+addbutton:SetPoint("TOPLEFT", panel, 375, -480)
+addbutton:SetSize(100, 16)
+addbutton:SetText("Add Item")
+
+-- remove button to remove the highlighted item in the content
+local removebutton = CreateFrame("Button", "Remove", panel, "UIPanelButtonTemplate")
+removebutton:SetPoint("TOPLEFT", panel, 375, -500)
+removebutton:SetSize(100, 16)
+removebutton:SetText("Remove Item")
 
 InterfaceOptions_AddCategory(panel)
