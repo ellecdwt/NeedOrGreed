@@ -122,6 +122,7 @@ PanelTemplates_TabResize(custom, 0)
 -- Create the wrapper frame for the scrolling items
 local scrollwrap = CreateFrame("ScrollFrame", "Wrap", panel)
 scrollwrap:SetPoint("CENTER", panel, 0, 0)
+scrollwrap:SetPoint("TOPLEFT", panel, 16, 107) 
 scrollwrap:SetBackdrop({
 	bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background"
 }) 
@@ -129,12 +130,12 @@ scrollwrap:SetBackdrop({
 
 -- Create the scrollbar for the scrolling content
 local scrollbar = CreateFrame("Slider", "ScrollBar", scrollwrap, "UIPanelScrollBarTemplate")
-scrollbar:SetPoint("CENTER", panel, 0, 0)
+scrollbar:SetPoint("TOPLEFT", panel, 16, 107) 
 scrollbar:SetOrientation("VERTICAL")
 scrollbar:SetSize(16, 128)
 scrollbar:SetMinMaxValues(0, 872)
 scrollbar:SetValue(0)
-local texture = scrollbar:CreateTexture(nil, "BACKGROUND")
+scrollbar:CreateTexture("texture", "BACKGROUND")
 texture:SetAllPoints()
 texture:SetTexture(0, 0, 0, 0.5)
 -- this script allows the scrolling
