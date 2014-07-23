@@ -16,11 +16,11 @@ EventFrame:SetScript("OnEvent", function(self,event,...)
 end) ]]--
 
 local StartUpFrame = CreateFrame("Frame")
-ChatFrame1:AddMessage('Part 0')
+ChatFrame1:AddMessage(type(NeedOrGreedDB))
 StartUpFrame:RegisterEvent("ADDON_LOADED")
-StartUpFrame:SetScript("OnEvent", function(self,event,...)
-	if event == "ADDON_LOADED" and name == "NeedOrGreed" then
-		ChatFrame1:AddMessage('Part 1')
+StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
+	if (event == "ADDON_LOADED" and arg1 == "NeedOrGreed") then
+		ChatFrame1:AddMessage("Part 1")
 		-- if the NeedOrGreedDB hasn't been initialized or has been deleted, add the default settings to it
 		if type(NeedOrGreedDB) ~= "table" then
 			local default = {}
