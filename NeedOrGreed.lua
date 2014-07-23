@@ -1,28 +1,13 @@
---[[
-local EventFrame = CreateFrame("Frame")
-EventFrame:RegisterEvent("PLAYER_LOGIN")
-EventFrame:SetScript("OnEvent", function(self,event,...) 
-	if type(NeedOrGreedPerCharDB) ~= "number" then
-		NeedOrGreedPerCharDB = 1
-		ChatFrame1:AddMessage('Hello, '.. UnitName("Player")..". Welcome to WoW!")
-	else
-		if NeedOrGreedPerCharDB == 1 then
-			ChatFrame1:AddMessage('Hello, '.. UnitName("Player")..". You have logged in " .. NeedOrGreedPerCharDB .. " time before.")
-		else
-			ChatFrame1:AddMessage('Hello '.. UnitName("Player")..". You have logged in " .. NeedOrGreedPerCharDB .. " times before.")
-		end
-		NeedOrGreedPerCharDB = NeedOrGreedPerCharDB + 1
-	end
-end) ]]--
-
+-- This is the startup action. It checks to see if this is the first time the addon has been run, or if the saved variable
+-- file has been deleted and sets the defaults again. It then checks to see if the character has changed its preferred settings
+-- and if so, uses those settings instead.
 local StartUpFrame = CreateFrame("Frame")
 ChatFrame1:AddMessage(type(NeedOrGreedDB))
 StartUpFrame:RegisterEvent("ADDON_LOADED")
 StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	if (event == "ADDON_LOADED" and arg1 == "NeedOrGreed") then
-		ChatFrame1:AddMessage("Part 1")
 		-- if the NeedOrGreedDB hasn't been initialized or has been deleted, add the default settings to it
-		if type(NeedOrGreedDB) ~= "table" then
+		if (type(NeedOrGreedDB) == "nil") then
 			local default = {}
 			default["Sound"] = true
 			default["Color"] = true
@@ -36,29 +21,24 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 			default["Jewelcrafting"] = true
 			default["Leatherworking"] = true
 			default["Tailoring"] = true
-			default["Custom"] = false
+			default["Custom"] = true
 			
 			NeedOrGreedDB = default
-			ChatFrame1:AddMessage('Part 2')
 		end
-
-		if type(NeedOrGreedPerCharDB) == "table" then
-			if NeedOrGreedPerCharDB["Settings"] == nil then
-				EnableSound:SetChecked(NeedOrGreedDB["Sound"])
-				EnableColor:SetChecked(NeedOrGreedDB["Color"])
-				EnableAccountWide:SetChecked(NeedOrGreedDB["AccountWide"])
-				AlchemyCheck:SetChecked(NeedOrGreedDB["Alchemy"])
-				BlacksmithingCheck:SetChecked(NeedOrGreedDB["Blacksmithing"])
-				CookingCheck:SetChecked(NeedOrGreedDB["Cooking"])
-				EnchantingCheck:SetChecked(NeedOrGreedDB["Enchanting"])
-				EngineeringCheck:SetChecked(NeedOrGreedDB["Engineering"])
-				InscriptionCheck:SetChecked(NeedOrGreedDB["Inscription"])
-				JewelcraftingCheck:SetChecked(NeedOrGreedDB["Jewelcrafting"])
-				LeatherworkingCheck:SetChecked(NeedOrGreedDB["Leatherworking"])
-				TailoringCheck:SetChecked(NeedOrGreedDB["Tailoring"])
-				CustomCheck:SetChecked(NeedOrGreedDB["Custom"])
-				ChatFrame1:AddMessage('Part 3')
-			end
+		if (type(NeedOrGreedPerCharDB) == "nil" or (type(NeedOrGreedPerCharDB) == "table" and NeedOrGreedPerCharDB["Settings"] == nil)) then
+			EnableSound:SetChecked(NeedOrGreedDB["Sound"])
+			EnableColor:SetChecked(NeedOrGreedDB["Color"])
+			EnableAccountWide:SetChecked(NeedOrGreedDB["AccountWide"])
+			AlchemyCheck:SetChecked(NeedOrGreedDB["Alchemy"])
+			BlacksmithingCheck:SetChecked(NeedOrGreedDB["Blacksmithing"])
+			CookingCheck:SetChecked(NeedOrGreedDB["Cooking"])
+			EnchantingCheck:SetChecked(NeedOrGreedDB["Enchanting"])
+			EngineeringCheck:SetChecked(NeedOrGreedDB["Engineering"])
+			InscriptionCheck:SetChecked(NeedOrGreedDB["Inscription"])
+			JewelcraftingCheck:SetChecked(NeedOrGreedDB["Jewelcrafting"])
+			LeatherworkingCheck:SetChecked(NeedOrGreedDB["Leatherworking"])
+			TailoringCheck:SetChecked(NeedOrGreedDB["Tailoring"])
+			CustomCheck:SetChecked(NeedOrGreedDB["Custom"])
 		end
 	end
 end)
