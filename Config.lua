@@ -47,7 +47,7 @@ alchemy:SetPoint("TOP", "EnableSound", 65, -40)
 alchemy:SetText("    Alchemy")
 PanelTemplates_TabResize(alchemy, 0)
 
-local blacksmithbox = CreateFrame("CheckButton", "BlacksmithCheck", panel, "UICheckButtonTemplate")
+local blacksmithbox = CreateFrame("CheckButton", "BlacksmithingCheck", panel, "UICheckButtonTemplate")
 blacksmithbox:SetSize(20, 20)
 blacksmithbox:SetPoint("TOP", "EnableSound", 123, -53)
 local blacksmith = CreateFrame("Button", "BlacksmithTab", panel, "TabButtonTemplate")
