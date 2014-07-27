@@ -2,7 +2,6 @@
 -- file has been deleted and sets the defaults again. It then checks to see if the character has changed its preferred settings
 -- and if so, uses those settings instead.
 local StartUpFrame = CreateFrame("Frame")
-ChatFrame1:AddMessage(type(NeedOrGreedDB))
 StartUpFrame:RegisterEvent("ADDON_LOADED")
 StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	if (event == "ADDON_LOADED" and arg1 == "NeedOrGreed") then
@@ -25,7 +24,10 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 			
 			NeedOrGreedDB = default
 		end
-		if (type(NeedOrGreedPerCharDB) == "nil" or (type(NeedOrGreedPerCharDB) == "table" and NeedOrGreedPerCharDB["Settings"] == nil)) then
+		if type(NeedOrGreedPerCharDB) == "nil" then
+			NeedOrGreedPerCharDB = {}
+		end
+		if (type(NeedOrGreedPerCharDB) == "table" and NeedOrGreedPerCharDB["Settings"] == nil) then
 			EnableSound:SetChecked(NeedOrGreedDB["Sound"])
 			EnableColor:SetChecked(NeedOrGreedDB["Color"])
 			EnableAccountWide:SetChecked(NeedOrGreedDB["AccountWide"])
@@ -39,7 +41,25 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 			LeatherworkingCheck:SetChecked(NeedOrGreedDB["Leatherworking"])
 			TailoringCheck:SetChecked(NeedOrGreedDB["Tailoring"])
 			CustomCheck:SetChecked(NeedOrGreedDB["Custom"])
+			
+			NeedOrGreedPerCharDB["Settings"] = NeedOrGreedDB
+		else
+			EnableSound:SetChecked(NeedOrGreedPerCharDB["Settings"]["Sound"])
+			EnableColor:SetChecked(NeedOrGreedPerCharDB["Settings"]["Color"])
+			EnableAccountWide:SetChecked(NeedOrGreedPerCharDB["Settings"]["AccountWide"])
+			AlchemyCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Alchemy"])
+			BlacksmithingCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Blacksmithing"])
+			CookingCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Cooking"])
+			EnchantingCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Enchanting"])
+			EngineeringCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Engineering"])
+			InscriptionCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Inscription"])
+			JewelcraftingCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Jewelcrafting"])
+			LeatherworkingCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Leatherworking"])
+			TailoringCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Tailoring"])
+			CustomCheck:SetChecked(NeedOrGreedPerCharDB["Settings"]["Custom"])
 		end
+		
+		-- set custom as the selected tab
 	end
 end)
 
