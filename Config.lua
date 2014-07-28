@@ -1,12 +1,14 @@
 local function AddMessages(_index)
-	Content:AddMessage(NeedOrGreedDB["AlchemyTab"][_index])
+	Table:AddMessage(NeedOrGreedDB["AlchemyTab"][_index])
 end
 
 -- not working yet
 local function Tab_OnClick(tab)
 	local tabname = tab:GetName()
 	--Content:Clear()
-	table.foreach(NeedOrGreedDB["AlchemyTab"], AddMessages)		
+	for k, v in pairs(NeedOrGreedDB["AlchemyTab"]) do
+		AddMessages(v)
+	end
 end
 
 -- this changes the character's account setting and stores them in saved variable
@@ -165,14 +167,14 @@ custom:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(custom, 0)
 
 -- Create the wrapper frame for the scrolling items
-local scrollwrap = CreateFrame("ScrollFrame", "Wrap", panel)
+local scrollwrap = CreateFrame("ScrollingMessageFrame", "Table", panel)
 scrollwrap:SetPoint("TOPLEFT", panel, 48, -169)
 scrollwrap:SetSize(482, 300) 
 scrollwrap:SetBackdrop({
 	bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background"
 }) 
 
--- Create the scrollbar for the scrolling content
+--[[ Create the scrollbar for the scrolling content
 local scrollbar = CreateFrame("Slider", "ScrollBar", scrollwrap, "UIPanelScrollBarTemplate")
 scrollbar:SetPoint("TOPLEFT", panel, 530, -169) 
 scrollbar:SetOrientation("VERTICAL")
@@ -195,7 +197,7 @@ test:SetPoint("TOPLEFT")
 
 -- set the content as the child of the wrapper
 scrollwrap:SetScrollChild(content)
-
+]]--
 -- label for the item name editbox
 local itemlabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
 itemlabel:SetPoint("TOPLEFT", panel, 75, -492)
