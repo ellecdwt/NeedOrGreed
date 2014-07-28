@@ -1,6 +1,6 @@
 -- not working yet
 function Tab_OnClick(tab)
-	ChatFrame1:AddMessage("This is ".. tab)
+	--use this to populate table
 end
 
 -- this changes the character's account setting and stores them in saved variable
@@ -8,10 +8,11 @@ local function Checkbox_OnClick(box)
 	if NeedOrGreedPerCharDB["Settings"] == nil then
 			NeedOrGreedPerCharDB["Settings"] = {}
 	end
+	local checkbox = box:GetName()
 	if box:GetChecked() == nil then
-		NeedOrGreedPerCharDB["Settings"]["Sound"] = false
+		NeedOrGreedPerCharDB["Settings"][checkbox] = false
 	else
-		NeedOrGreedPerCharDB["Settings"]["Sound"] = true
+		NeedOrGreedPerCharDB["Settings"][checkbox] = true
 	end
 end
 
@@ -36,7 +37,7 @@ panel_subtext:SetJustifyV("TOP")
 panel_subtext:SetText(GetAddOnMetadata("NeedOrGreed", "Notes"))
 
 -- Check Button to enable a sound alert on loot of a needed item
-local sound_checkbox = CreateFrame("CheckButton", "EnableSound", panel, "InterfaceOptionsCheckButtonTemplate")
+local sound_checkbox = CreateFrame("CheckButton", "Sound", panel, "InterfaceOptionsCheckButtonTemplate")
 sound_checkbox:SetPoint("TOPLEFT", panel_subtext, "BOTTOMLEFT", 0, 0)
 sound_checkbox.tooltipText = "Sounds an alert on needed item loot"
 sound_checkbox:SetScript("OnClick", Checkbox_OnClick)
@@ -44,108 +45,118 @@ sound_checkbox:SetScript("OnClick", Checkbox_OnClick)
 local sound_checkbox_label = _G[sound_checkbox:GetName().."Text"]:SetText("Sound Alert")
 
 -- Check Button to create a color ring around needed looted item
-local color_checkbox = CreateFrame("CheckButton", "EnableColor", panel, "InterfaceOptionsCheckButtonTemplate")
+local color_checkbox = CreateFrame("CheckButton", "Color", panel, "InterfaceOptionsCheckButtonTemplate")
 color_checkbox:SetPoint("TOPLEFT", panel_subtext, "BOTTOMLEFT", 200, 0)
 color_checkbox.tooltipText = "Creates a colored border around needed items that are looted"
-sound_checkbox:SetScript("OnClick", Checkbox_OnClick)
+color_checkbox:SetScript("OnClick", Checkbox_OnClick)
 -- text label for the check button
 local color_checkbox_label = _G[color_checkbox:GetName() .. "Text"]:SetText("Color Border")
 
 -- Check Button to get alerts from other characters lists
-local account_wide_checkbox = CreateFrame("CheckButton", "EnableAccountWide", panel, "InterfaceOptionsCheckButtonTemplate")
+local account_wide_checkbox = CreateFrame("CheckButton", "AccountWide", panel, "InterfaceOptionsCheckButtonTemplate")
 account_wide_checkbox:SetPoint("TOPLEFT", panel_subtext, "BOTTOMLEFT", 400, 0)
 account_wide_checkbox.tooltipText = "Alert for items that other characters are looking for"
-sound_checkbox:SetScript("OnClick", Checkbox_OnClick)
+account_wide_checkbox:SetScript("OnClick", Checkbox_OnClick)
 -- text label for the check button
 local account_wide_checkbox_label = _G[account_wide_checkbox:GetName() .. "Text"]:SetText("Account Wide")
 
 -- Add checkbuttons and tabs for the Tradeskills lists and custom
-local alchemybox = CreateFrame("CheckButton", "AlchemyCheck", panel, "UICheckButtonTemplate")
+local alchemybox = CreateFrame("CheckButton", "Alchemy", panel, "UICheckButtonTemplate")
 alchemybox:SetSize(20, 20)
-alchemybox:SetPoint("TOP", "EnableSound", 35, -53)
+alchemybox:SetPoint("TOP", "Sound", 35, -53)
+alchemybox:SetScript("OnClick", Checkbox_OnClick)
 local alchemy = CreateFrame("Button", "AlchemyTab", panel, "TabButtonTemplate")
-alchemy:SetPoint("TOP", "EnableSound", 65, -40)
+alchemy:SetPoint("TOP", "Sound", 65, -40)
 alchemy:SetText("    Alchemy")
 alchemy:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(alchemy, 0)
 
-local blacksmithbox = CreateFrame("CheckButton", "BlacksmithingCheck", panel, "UICheckButtonTemplate")
+local blacksmithbox = CreateFrame("CheckButton", "Blacksmithing", panel, "UICheckButtonTemplate")
 blacksmithbox:SetSize(20, 20)
-blacksmithbox:SetPoint("TOP", "EnableSound", 123, -53)
+blacksmithbox:SetPoint("TOP", "Sound", 123, -53)
+blacksmithbox:SetScript("OnClick", Checkbox_OnClick)
 local blacksmith = CreateFrame("Button", "BlacksmithTab", panel, "TabButtonTemplate")
-blacksmith:SetPoint("TOP", "EnableSound", 165, -40)
+blacksmith:SetPoint("TOP", "Sound", 165, -40)
 blacksmith:SetText("    Blacksmithing")
 blacksmith:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(blacksmith, 0)
 
-local cookingbox = CreateFrame("CheckButton", "CookingCheck", panel, "UICheckButtonTemplate")
+local cookingbox = CreateFrame("CheckButton", "Cooking", panel, "UICheckButtonTemplate")
 cookingbox:SetSize(20, 20)
-cookingbox:SetPoint("TOP", "EnableSound", 235, -53)
+cookingbox:SetPoint("TOP", "Sound", 235, -53)
+cookingbox:SetScript("OnClick", Checkbox_OnClick)
 local cooking = CreateFrame("Button", "CookingTab", panel, "TabButtonTemplate")
-cooking:SetPoint("TOP", "EnableSound", 263, -40)
+cooking:SetPoint("TOP", "Sound", 263, -40)
 cooking:SetText("    Cooking")
 cooking:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(cooking, 0)
 
-local enchantingbox = CreateFrame("CheckButton", "EnchantingCheck", panel, "UICheckButtonTemplate")
+local enchantingbox = CreateFrame("CheckButton", "Enchanting", panel, "UICheckButtonTemplate")
 enchantingbox:SetSize(20, 20)
-enchantingbox:SetPoint("TOP", "EnableSound", 320, -53)
+enchantingbox:SetPoint("TOP", "Sound", 320, -53)
+enchantingbox:SetScript("OnClick", Checkbox_OnClick)
 local enchanting = CreateFrame("Button", "EnchantingTab", panel, "TabButtonTemplate")
-enchanting:SetPoint("TOP", "EnableSound", 353, -40)
+enchanting:SetPoint("TOP", "Sound", 353, -40)
 enchanting:SetText("    Enchanting")
 enchanting:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(enchanting, 0)
 
-local engineeringbox = CreateFrame("CheckButton", "EngineeringCheck", panel, "UICheckButtonTemplate")
+local engineeringbox = CreateFrame("CheckButton", "Engineering", panel, "UICheckButtonTemplate")
 engineeringbox:SetSize(20, 20)
-engineeringbox:SetPoint("TOP", "EnableSound", 416, -53)
+engineeringbox:SetPoint("TOP", "Sound", 416, -53)
+engineeringbox:SetScript("OnClick", Checkbox_OnClick)
 local engineering = CreateFrame("Button", "EngineeringTab", panel, "TabButtonTemplate")
-engineering:SetPoint("TOP", "EnableSound", 450, -40)
+engineering:SetPoint("TOP", "Sound", 450, -40)
 engineering:SetText("    Engineering")
 engineering:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(engineering, 0)
 
-local inscriptionbox = CreateFrame("CheckButton", "InscriptionCheck", panel, "UICheckButtonTemplate")
+local inscriptionbox = CreateFrame("CheckButton", "Inscription", panel, "UICheckButtonTemplate")
 inscriptionbox:SetSize(20, 20)
-inscriptionbox:SetPoint("TOP", "EnableSound", 35, -80)
+inscriptionbox:SetPoint("TOP", "Sound", 35, -80)
+inscriptionbox:SetScript("OnClick", Checkbox_OnClick)
 local inscription = CreateFrame("Button", "InscriptionTab", panel, "TabButtonTemplate")
-inscription:SetPoint("TOP", "EnableSound", 65, -67)
+inscription:SetPoint("TOP", "Sound", 65, -67)
 inscription:SetText("    Inscription")
 inscription:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(inscription, 0)
 
-local jewelcraftingbox = CreateFrame("CheckButton", "JewelcraftingCheck", panel, "UICheckButtonTemplate")
+local jewelcraftingbox = CreateFrame("CheckButton", "Jewelcrafting", panel, "UICheckButtonTemplate")
 jewelcraftingbox:SetSize(20, 20)
-jewelcraftingbox:SetPoint("TOP", "EnableSound", 125, -80)
+jewelcraftingbox:SetPoint("TOP", "Sound", 125, -80)
+jewelcraftingbox:SetScript("OnClick", Checkbox_OnClick)
 local jewelcrafting = CreateFrame("Button", "JewelcraftingTab", panel, "TabButtonTemplate")
-jewelcrafting:SetPoint("TOP", "EnableSound", 165, -67)
+jewelcrafting:SetPoint("TOP", "Sound", 165, -67)
 jewelcrafting:SetText("    Jewelcrafting")
 jewelcrafting:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(jewelcrafting, 0)
 
-local leatherworkingbox = CreateFrame("CheckButton", "LeatherworkingCheck", panel, "UICheckButtonTemplate")
+local leatherworkingbox = CreateFrame("CheckButton", "Leatherworking", panel, "UICheckButtonTemplate")
 leatherworkingbox:SetSize(20, 20)
-leatherworkingbox:SetPoint("TOP", "EnableSound", 234, -80)
+leatherworkingbox:SetPoint("TOP", "Sound", 234, -80)
+leatherworkingbox:SetScript("OnClick", Checkbox_OnClick)
 local leatherworking = CreateFrame("Button", "LeatherworkingTab", panel, "TabButtonTemplate")
-leatherworking:SetPoint("TOP", "EnableSound", 278, -67)
+leatherworking:SetPoint("TOP", "Sound", 278, -67)
 leatherworking:SetText("    Leatherworking")
 leatherworking:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(leatherworking, 0)
 
-local tailoringbox = CreateFrame("CheckButton", "TailoringCheck", panel, "UICheckButtonTemplate")
+local tailoringbox = CreateFrame("CheckButton", "Tailoring", panel, "UICheckButtonTemplate")
 tailoringbox:SetSize(20, 20)
-tailoringbox:SetPoint("TOP", "EnableSound", 352, -80)
+tailoringbox:SetPoint("TOP", "Sound", 352, -80)
+tailoringbox:SetScript("OnClick", Checkbox_OnClick)
 local tailoring = CreateFrame("Button", "TailoringTab", panel, "TabButtonTemplate")
-tailoring:SetPoint("TOP", "EnableSound", 379, -67)
+tailoring:SetPoint("TOP", "Sound", 379, -67)
 tailoring:SetText("    Tailoring")
 tailoring:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(tailoring, 0)
 
-local custombox = CreateFrame("CheckButton", "CustomCheck", panel, "UICheckButtonTemplate")
+local custombox = CreateFrame("CheckButton", "Custom", panel, "UICheckButtonTemplate")
 custombox:SetSize(20, 20)
-custombox:SetPoint("TOP", "EnableSound", 435, -80)
+custombox:SetPoint("TOP", "Sound", 435, -80)
+custombox:SetScript("OnClick", Checkbox_OnClick)
 local custom = CreateFrame("Button", "CustomTab", panel, "TabButtonTemplate")
-custom:SetPoint("TOP", "EnableSound", 460, -67)
+custom:SetPoint("TOP", "Sound", 460, -67)
 custom:SetText("    Custom")
 custom:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(custom, 0)
