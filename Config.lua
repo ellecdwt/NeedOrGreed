@@ -1,13 +1,16 @@
+local function AddMessages(_index)
+	Content:AddMessage(NeedOrGreedDB["AlchemyTab"][_index])
+end
+
 -- not working yet
-function Tab_OnClick(tab)
-	--use this to populate table
+local function Tab_OnClick(tab)
+	local tabname = tab:GetName()
+	--Content:Clear()
+	table.foreach(NeedOrGreedDB["AlchemyTab"], AddMessages)		
 end
 
 -- this changes the character's account setting and stores them in saved variable
 local function Checkbox_OnClick(box)
-	if NeedOrGreedPerCharDB["Settings"] == nil then
-			NeedOrGreedPerCharDB["Settings"] = {}
-	end
 	local checkbox = box:GetName()
 	if box:GetChecked() == nil then
 		NeedOrGreedPerCharDB["Settings"][checkbox] = false
@@ -18,7 +21,7 @@ end
 
 
 -- Create main frame for information text
-local panel = CreateFrame("FRAME", nil, InterfaceOptionsFramePanelContainer)
+local panel = CreateFrame("Frame", nil, InterfaceOptionsFramePanelContainer)
 panel.name = GetAddOnMetadata("NeedOrGreed", "Title")
 panel:SetPoint("CENTER") 
 panel:Hide()
@@ -188,7 +191,6 @@ content:SetSize(128, 128)
 
 -- test for filling content. will be replaced by tables of item names
 local test = content:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-test:SetText("I'M HERE!!")
 test:SetPoint("TOPLEFT")
 
 -- set the content as the child of the wrapper
