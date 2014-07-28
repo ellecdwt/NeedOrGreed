@@ -2,9 +2,46 @@ local function AddMessages(v)
 	Content:AddMessage(v)
 end
 
+local function DeactivateTabs(tab)
+	if tab ~= "AlchemyTab" then
+		AlchemyTab:UnlockHighlight()
+	end
+	if tab ~= "BlacksmithingTab" then
+		BlacksmithTab:UnlockHighlight()
+	end
+	if tab ~= "CookingTab" then
+		CookingTab:UnlockHighlight()
+	end
+	if tab ~= "EnchantingTab" then
+		EnchantingTab:UnlockHighlight()
+	end
+	if tab ~= "EngineeringTab" then
+		EngineeringTab:UnlockHighlight()
+	end
+	if tab ~= "InscriptionTab" then
+		InscriptionTab:UnlockHighlight()
+	end
+	if tab ~= "JewelcraftingTab" then
+		JewelcraftingTab:UnlockHighlight()
+	end
+	if tab ~= "LeatherworkingTab" then
+		LeatherworkingTab:UnlockHighlight()
+	end
+	if tab ~= "TailoringTab" then
+		TailoringTab:UnlockHighlight()
+	end
+	if tab ~= "CustomTab" then
+		CustomTab:UnlockHighlight()
+	end
+end
+		
+
 -- not working yet
 local function Tab_OnClick(tab)
 	local tabname = tab:GetName()
+	DeactivateTabs(tabname)
+	tab:SetHighlightFontObject(GameFontHighlightSmall)
+	tab:LockHighlight()
 	Content:Clear()
 	for k, v in pairs(NeedOrGreedDB["AlchemyTab"]) do
 		AddMessages(v)
@@ -173,6 +210,20 @@ scrollwrap:SetSize(482, 300)
 scrollwrap:SetBackdrop({
 	bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background"
 })
+scrollwrap:EnableMouseWheel(true)
+--[[scrollwrap:SetScript("OnMouseWheel", function(self, delta)
+    local current = ScrollBar:GetValue()
+
+    if IsShiftKeyDown() and (delta > 0) then
+        ScrollBar:SetValue(0)
+    elseif IsShiftKeyDown() and (delta < 0) then
+        ScrollBar:SetValue(scrollMax)
+    elseif (delta < 0) and (current < scrollMax) then
+        ScrollBar:SetValue(current + 20)
+    elseif (delta > 0) and (current > 1) then
+        ScrollBar:SetValue(current - 20)
+    end
+ end)]]--
 
 
 -- Create the scrollbar for the scrolling content
@@ -190,9 +241,13 @@ scrollbar:SetScript("OnValueChanged", function (self) scrollwrap:SetVerticalScro
 
 -- Create the content frame to put the items in
 local content = CreateFrame("ScrollingMessageFrame", "Content", scrollwrap)
-content:SetSize(128, 128)
+content:SetSize(250, 1500)
 content:SetFontObject("GameFontNormal") 
--- settings for how messages appear
+--content:SetMaxLines(1000)
+content:SetFading(false) 
+content:SetInsertMode("TOP")
+content:EnableMouseWheel(true)
+
 --local test = content:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 --test:SetPoint("TOPLEFT")
 
