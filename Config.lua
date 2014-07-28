@@ -1,11 +1,11 @@
-local function AddMessages(_index)
-	Table:AddMessage(NeedOrGreedDB["AlchemyTab"][_index])
+local function AddMessages(v)
+	Content:AddMessage(v)
 end
 
 -- not working yet
 local function Tab_OnClick(tab)
 	local tabname = tab:GetName()
-	--Content:Clear()
+	Content:Clear()
 	for k, v in pairs(NeedOrGreedDB["AlchemyTab"]) do
 		AddMessages(v)
 	end
@@ -167,14 +167,15 @@ custom:SetScript("OnClick", Tab_OnClick)
 PanelTemplates_TabResize(custom, 0)
 
 -- Create the wrapper frame for the scrolling items
-local scrollwrap = CreateFrame("ScrollingMessageFrame", "Table", panel)
+local scrollwrap = CreateFrame("ScrollFrame", "Wrap", panel)
 scrollwrap:SetPoint("TOPLEFT", panel, 48, -169)
 scrollwrap:SetSize(482, 300) 
 scrollwrap:SetBackdrop({
 	bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background"
-}) 
+})
 
---[[ Create the scrollbar for the scrolling content
+
+-- Create the scrollbar for the scrolling content
 local scrollbar = CreateFrame("Slider", "ScrollBar", scrollwrap, "UIPanelScrollBarTemplate")
 scrollbar:SetPoint("TOPLEFT", panel, 530, -169) 
 scrollbar:SetOrientation("VERTICAL")
@@ -188,16 +189,16 @@ texture:SetTexture(0, 0, 0, 0.5)
 scrollbar:SetScript("OnValueChanged", function (self) scrollwrap:SetVerticalScroll(self:GetValue()) end)
 
 -- Create the content frame to put the items in
-local content = CreateFrame("Frame", "Content", scrollwrap)
+local content = CreateFrame("ScrollingMessageFrame", "Content", scrollwrap)
 content:SetSize(128, 128)
-
--- test for filling content. will be replaced by tables of item names
-local test = content:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-test:SetPoint("TOPLEFT")
+content:SetFontObject("GameFontNormal") 
+-- settings for how messages appear
+--local test = content:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+--test:SetPoint("TOPLEFT")
 
 -- set the content as the child of the wrapper
 scrollwrap:SetScrollChild(content)
-]]--
+
 -- label for the item name editbox
 local itemlabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
 itemlabel:SetPoint("TOPLEFT", panel, 75, -492)
