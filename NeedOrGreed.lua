@@ -67,7 +67,8 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 		if type(NeedOrGreedPerCharDB) == "nil" then
 			NeedOrGreedPerCharDB = {}
 		end
-		if (type(NeedOrGreedPerCharDB) == "table" and NeedOrGreedPerCharDB["Settings"] == nil) then
+		if (NeedOrGreedPerCharDB["Settings"] == nil) then
+			NeedOrGreedPerCharDB["Settings"] = {}
 			Sound:SetChecked(NeedOrGreedDB["Settings"]["Sound"])
 			Color:SetChecked(NeedOrGreedDB["Settings"]["Color"])
 			AccountWide:SetChecked(NeedOrGreedDB["Settings"]["AccountWide"])
@@ -82,7 +83,7 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 			Tailoring:SetChecked(NeedOrGreedDB["Settings"]["Tailoring"])
 			Custom:SetChecked(NeedOrGreedDB["Settings"]["Custom"])
 			
-			NeedOrGreedPerCharDB["Settings"] = NeedOrGreedDB["Settings"]
+			for k, v in pairs(NeedOrGreedDB["Settings"]) do NeedOrGreedPerCharDB["Settings"][k] = v end
 		else
 			Sound:SetChecked(NeedOrGreedPerCharDB["Settings"]["Sound"])
 			Color:SetChecked(NeedOrGreedPerCharDB["Settings"]["Color"])
@@ -98,8 +99,56 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 			Tailoring:SetChecked(NeedOrGreedPerCharDB["Settings"]["Tailoring"])
 			Custom:SetChecked(NeedOrGreedPerCharDB["Settings"]["Custom"])
 		end
-		
-		-- set custom as the selected tab
+		if (NeedOrGreedPerCharDB["AlchemyTab"] == nil) then
+			NeedOrGreedPerCharDB["AlchemyTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["AlchemyTab"]) do NeedOrGreedPerCharDB["AlchemyTab"][k] = v
+			end
+		end
+--[[	if (NeedOrGreedPerCharDB["BlacksmithTab"] == nil) then
+			NeedOrGreedPerCharDB["BlacksmithTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["BlacksmithTab"]) do NeedOrGreedPerCharDB["BlacksmithTab"][k] = v
+			end
+		end
+		if (NeedOrGreedPerCharDB["CookingTab"] == nil) then
+			NeedOrGreedPerCharDB["CookingTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["CookingTab"]) do NeedOrGreedPerCharDB["CookingTab"][k] = v
+			end
+		end
+		if (NeedOrGreedPerCharDB["EnchantingTab"] == nil) then
+			NeedOrGreedPerCharDB["EnchantingTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["EnchantingTab"]) do NeedOrGreedPerCharDB["EnchantingTab"][k] = v
+			end
+		end
+		if (NeedOrGreedPerCharDB["EngineeringTab"] == nil) then
+			NeedOrGreedPerCharDB["EngineeringTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["EngineeringTab"]) do NeedOrGreedPerCharDB["EngineeringTab"][k] = v
+			end
+		end
+		if (NeedOrGreedPerCharDB["InscriptionTab"] == nil) then
+			NeedOrGreedPerCharDB["InscriptionTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["InscriptionTab"]) do NeedOrGreedPerCharDB["InscriptionTab"][k] = v
+			end
+		end
+		if (NeedOrGreedPerCharDB["JewelcraftingTab"] == nil) then
+			NeedOrGreedPerCharDB["JewelcraftingTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["JewelcraftingTab"]) do NeedOrGreedPerCharDB["JewelcraftingTab"][k] = v
+			end
+		end
+		if (NeedOrGreedPerCharDB["LeatherworkingTab"] == nil) then
+			NeedOrGreedPerCharDB["LeatherworkingTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["LeatherworkingTab"]) do NeedOrGreedPerCharDB["LeatherworkingTab"][k] = v
+			end
+		end		
+		if (NeedOrGreedPerCharDB["TailoringTab"] == nil) then
+			NeedOrGreedPerCharDB["TailoringTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["TailoringTab"]) do NeedOrGreedPerCharDB["TailoringTab"][k] = v
+			end
+		end
+		if (NeedOrGreedPerCharDB["CustomTab"] == nil) then
+			NeedOrGreedPerCharDB["CustomTab"] = {}
+			for k, v in pairs(NeedOrGreedDB["CustomTab"]) do NeedOrGreedPerCharDB["CustomTab"][k] = v
+			end
+		end ]]--
 	end
 end)
 

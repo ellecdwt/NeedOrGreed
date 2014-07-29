@@ -1,7 +1,9 @@
+-- adds a line to the frame from the table of items
 local function AddMessages(v)
 	Content:AddMessage(v)
 end
 
+-- deactivates all tabs except the one just selected
 local function DeactivateTabs(tab)
 	if tab ~= "AlchemyTab" then
 		AlchemyTab:UnlockHighlight()
@@ -36,7 +38,7 @@ local function DeactivateTabs(tab)
 end
 		
 
--- not working yet
+-- Highlights the tab and populates frame with those items
 local function Tab_OnClick(tab)
 	local tabname = tab:GetName()
 	DeactivateTabs(tabname)
@@ -58,12 +60,30 @@ local function Checkbox_OnClick(box)
 	end
 end
 
+-- resets the settings to the default ones
+local function Reset()
+	Sound:SetChecked(NeedOrGreedDB["Settings"]["Sound"])
+	Color:SetChecked(NeedOrGreedDB["Settings"]["Color"])
+	AccountWide:SetChecked(NeedOrGreedDB["Settings"]["AccountWide"])
+	Alchemy:SetChecked(NeedOrGreedDB["Settings"]["Alchemy"])
+	Blacksmithing:SetChecked(NeedOrGreedDB["Settings"]["Blacksmithing"])
+	Cooking:SetChecked(NeedOrGreedDB["Settings"]["Cooking"])
+	Enchanting:SetChecked(NeedOrGreedDB["Settings"]["Enchanting"])
+	Engineering:SetChecked(NeedOrGreedDB["Settings"]["Engineering"])
+	Inscription:SetChecked(NeedOrGreedDB["Settings"]["Inscription"])
+	Jewelcrafting:SetChecked(NeedOrGreedDB["Settings"]["Jewelcrafting"])
+	Leatherworking:SetChecked(NeedOrGreedDB["Settings"]["Leatherworking"])
+	Tailoring:SetChecked(NeedOrGreedDB["Settings"]["Tailoring"])
+	Custom:SetChecked(NeedOrGreedDB["Settings"]["Custom"])
+end
 
 -- Create main frame for information text
 local panel = CreateFrame("Frame", nil, InterfaceOptionsFramePanelContainer)
 panel.name = GetAddOnMetadata("NeedOrGreed", "Title")
 panel:SetPoint("CENTER") 
 panel:Hide()
+panel.refresh = function (self) CustomTab:Click("LeftButton", true); end; -- select custom tab on show
+panel.default = function (self) for k, v in pairs(NeedOrGreedDB["Settings"]) do NeedOrGreedPerCharDB["Settings"][k] = v end Reset() end -- reset settings to default
 
 -- This is the Main title of the interface options frame
 local panel_title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
