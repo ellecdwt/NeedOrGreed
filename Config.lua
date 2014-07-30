@@ -45,8 +45,10 @@ local function Tab_OnClick(tab)
 	tab:SetHighlightFontObject(GameFontHighlightSmall)
 	tab:LockHighlight()
 	Content:Clear()
-	for k, v in pairs(NeedOrGreedDB["AlchemyTab"]) do
-		AddMessages(v)
+	if next(NeedOrGreedDB[tabname]) ~= nil then
+		for k, v in pairs(NeedOrGreedDB[tabname]) do
+			AddMessages(v)
+		end
 	end
 end
 
