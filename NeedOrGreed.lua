@@ -1127,4 +1127,23 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	end
 end)
 
-
+-- This is the loot hook. It gets the info from the loot inventory and alerts if it is a reagent that is needed
+local LootFrame = CreateFrame("Frame")
+LootFrame:RegisterEvent("LOOT_OPENED")
+LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
+	ChatFrame1:AddMessage('Got here!')
+	local itemcount = GetNumLootItems()
+	ChatFrame1:AddMessage(itemcount)
+	local count = 1
+	while itemcount > count do
+		lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(count)
+		count = count + 1
+		ChatFrame1:AddMessage('count = ' .. count)
+		if lootName == "Chunk of Boar Meat" then
+			if Sound:GetChecked() == 1 then
+				PlaySound("ITEMGENERICSOUND", 'master')
+			end
+			ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
+		end
+	end
+end)
