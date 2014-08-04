@@ -1126,6 +1126,23 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 		end
 	end
 end)
+-- this sets the characters tradeskills in the db for account sharing
+
+local SkillsFrame = CreateFrame("Frame")
+SkillsFrame:RegisterEvent("SKILL_LINES_CHANGED")
+SkillsFrame:SetScript("OnEvent", function(self,event,arg1,...)
+		
+	if(NeedOrGreedDB["Accounts"] == nil) then
+		NeedOrGreedDB["Accounts"] = {}
+	end
+	if AccountWide:GetChecked() then
+		local player = UnitName("player")
+		local profession1, profession2 = GetProfessions()
+		local prof1name = GetProfessionInfo(profession1)
+		local prof2name = GetProfessionInfo(profession2)
+		NeedOrGreedDB["Accounts"][player] = {prof1name, prof2name}
+	end
+end)
 
 -- This is the loot event. It gets the info from the loot inventory and alerts if it is a reagent that is needed
 local LootFrame = CreateFrame("Frame")
