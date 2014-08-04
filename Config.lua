@@ -57,9 +57,20 @@ local function Checkbox_OnClick(box)
 	local checkbox = box:GetName()
 	if box:GetChecked() == nil then
 		NeedOrGreedPerCharDB["Settings"][checkbox] = false
+		if checkbox == "AccountWide" then
+			local player = UnitName("player")
+			NeedOrGreedDB["Accounts"][player] = nil
+		end
 	else
 		NeedOrGreedPerCharDB["Settings"][checkbox] = true
-	end
+		if checkbox == "AccountWide" then
+			local player = UnitName("player")
+			local profession1, profession2 = GetProfessions()
+			local prof1name = GetProfessionInfo(profession1)
+			local prof2name = GetProfessionInfo(profession2)
+			NeedOrGreedDB["Accounts"][player] = {prof1name, prof2name}
+		end
+	end		
 end
 
 -- resets the settings to the default ones
