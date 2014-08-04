@@ -1127,14 +1127,14 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	end
 end)
 
--- This is the loot hook. It gets the info from the loot inventory and alerts if it is a reagent that is needed
+-- This is the loot event. It gets the info from the loot inventory and alerts if it is a reagent that is needed
 local LootFrame = CreateFrame("Frame")
 LootFrame:RegisterEvent("LOOT_OPENED")
 LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	local itemcount = GetNumLootItems()
 	local count = 1
 	while itemcount >= count do
-		lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(count)
+		local lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(count)
 		count = count + 1
 		if lootName == "Chunk of Boar Meat" then
 			if Sound:GetChecked() == 1 then
@@ -1144,3 +1144,38 @@ LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
 		end
 	end
 end)
+
+-- This is the tooltip hook. It will add the auction house line to the tooltip when an item is hovered over.
+-- May want to add the items that can use it and the characters that use it
+local addedline = false
+local function AddLine(tooltip, ...)
+	if addedline == false then
+		local itemName, itemLink = tooltip:GetItem()
+		local name, texture, count, quality, canUse, level, levelColHeader, minBid,
+		minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
+		ownerFullName, saleStatus, itemId, hasAllInfo = GetAuctionItemInfo("list", 1)
+		if hasAllInfo then
+			if buyoutPrice > 0 then
+				local gold = buyoutPrice / 10000
+				local silver = (buyoutPrice % 10000) / 100
+				local copper = (buyoutPrice % 10000) % 100
+				tooltip:AddLine("Auction Buyout: " .. gold .. "g " .. silver .. "s " .. copper .. "c")
+			else
+				local gold = minBid / 10000
+				local silver = (minBid % 10000) / 100
+				local copper = (minBid % 10000) % 100
+				tooltip:Addline("Auction Starting Bid: " .. gold .. "g " .. silver .. "s " .. copper .. "c")
+			end
+		else
+			tooltip:AddLine("Auction not found.")
+		end
+		addedline = true
+	end
+end
+
+local function ClearLine(tooltip, ...)
+	addedline = false
+end
+
+GameTooltip:HookScript("OnTooltipSetItem", AddLine)
+GameTooltip:HookScript("OnTooltipCleared", ClearLine)
