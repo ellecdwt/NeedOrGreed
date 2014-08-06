@@ -1150,15 +1150,19 @@ LootFrame:RegisterEvent("LOOT_OPENED")
 LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	local itemcount = GetNumLootItems()
 	local count = 1
+	local found = false
 	while itemcount >= count do
 		local lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(count)
 		count = count + 1
 		if lootName == "Chunk of Boar Meat" then
 			if Sound:GetChecked() == 1 then
-				PlaySound("LEVELUPSOUND", 'master')
+				found = true
 			end
 			ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
 		end
+	end
+	if found == true then
+		PlaySound("LEVELUPSOUND", 'master')
 	end
 end)
 
@@ -1196,3 +1200,16 @@ end
 
 GameTooltip:HookScript("OnTooltipSetItem", AddLine)
 GameTooltip:HookScript("OnTooltipCleared", ClearLine)
+
+-- this hooks the LootFrame update function to try and change the border of items that are being tracked
+hooksecurefunc("LootFrame_UpdateButton", function(index)
+	local lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(index)
+	if lootName == "Chunk of Boar Meat" then
+			if Color:GetChecked() == 1 then
+				SetItemButtonNormalTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
+				SetItemButtonNameFrameVertexColor(_G["LootButton"..index], 247, 0, 119)
+				SetItemButtonNormalTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
+			end
+			ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
+	end
+end)
