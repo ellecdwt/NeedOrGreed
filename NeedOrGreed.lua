@@ -1201,32 +1201,32 @@ SkillsFrame:SetScript("OnEvent", function(self,event,arg1,...)
 end)
 
 -- this splits up the reagents table to look for matching item in the DB
-local function SplitUpLoot(lootName, found)
+local function SplitUpLoot(lootName)
+	local found = false
+	local foundsound = false
 	for k, v in pairs(NeedOrGreedPerCharDB["Reagents"][lootName]) do
 		local tab, items = strsplit("~", NeedOrGreedPerCharDB["Reagents"][lootName][k], 2)
 		if items ~= nil then
 			local blah, count = string.gsub(items, "~", "~")
-			if count > 0 then
-				local counter = 0
-				while count >= counter do
-					local item, items = strsplit("~", items, 2)
-					if NeedOrGreedPerCharDB[tab] ~= nil then
-						for k, v in pairs(NeedOrGreedPerCharDB[tab]) do
-							if v == item then
-								if Sound:GetChecked() == 1 then
-									found = true
-								end
-								ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
-								break
+			local counter = 0
+			while count >= counter do
+				local item, items = strsplit("~", items, 2)
+				if NeedOrGreedPerCharDB[tab] ~= nil then
+					for k, v in pairs(NeedOrGreedPerCharDB[tab]) do
+						if v == item then
+							found = true
+							if Sound:GetChecked() == 1 then
+								foundsound = true
 							end
+							break
 						end
 					end
-					counter = counter + 1
 				end
+				counter = counter + 1
 			end
 		end 
 	end
-	return found
+	return found, foundsound
 end
 
 -- This is the loot event. It gets the info from the loot inventory and alerts if it is a reagent that is needed
@@ -1235,15 +1235,18 @@ LootFrame:RegisterEvent("LOOT_OPENED")
 LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	local itemcount = GetNumLootItems()
 	local count = 1
-	local found = false
+	local found, foundsound = false
 	while itemcount >= count do
 		local lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(count)
 		count = count + 1
 		if NeedOrGreedPerCharDB["Reagents"][lootName] ~= nil then
-			found = SplitUpLoot(lootName, found)
+			found, foundsound = SplitUpLoot(lootName)
 		end
+		if found == true then
+		ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
 	end
-	if found == true then
+	end
+	if foundsound == true then
 		PlaySound("LEVELUPSOUND", 'master')
 	end
 end)
@@ -1278,12 +1281,16 @@ GameTooltip:HookScript("OnTooltipCleared", ClearLine)
 -- this hooks the LootFrame update function to try and change the border of items that are being tracked
 hooksecurefunc("LootFrame_UpdateButton", function(index)
 	local lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(index)
-	if lootName == "Chunk of Boar Meat" then
-			if Color:GetChecked() == 1 then
-				SetItemButtonTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
-				SetItemButtonNameFrameVertexColor(_G["LootButton"..index], 247, 0, 119)
-				SetItemButtonNormalTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
-				_G["LootButton"..index.."Text"]:SetVertexColor(247, 0, 119)
-			end
+	local found, foundsound = false
+	if NeedOrGreedPerCharDB["Reagents"][lootName] ~= nil then
+			found, foundsound = SplitUpLoot(lootName)
+	end
+	if found == true then
+		if Color:GetChecked() == 1 then
+			SetItemButtonTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
+			SetItemButtonNameFrameVertexColor(_G["LootButton"..index], 247, 0, 119)
+			SetItemButtonNormalTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
+			_G["LootButton"..index.."Text"]:SetVertexColor(247, 0, 119)
+		end
 	end
 end)
