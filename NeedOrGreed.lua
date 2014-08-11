@@ -1167,30 +1167,30 @@ LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
 end)
 
 -- This is the tooltip hook. It will add the players and the respective tradeskills to the tooltip if account wide is checked
-local addedline = false
-local function AddLine(tooltip, ...)
-	if addedline == false then
-		local itemName, itemLink = tooltip:GetItem()
-		for k,v in pairs(NeedOrGreedDB["Reagents"][itemName]) do
-			tradeskill = strsplit("~", v, "1")
-			if NeedOrGreedDB[tradeskill] ~= nil then
-				for k,v in pairs(NeedOrGreedDB["Accounts"]) do
-					trade = strsub(tradeskill, 1, (strlen(tradeskill) - 3))
-					if v == "trade" then
-						tooltip:AddLine(k .. " - " .. v)
-					end
-				end
-			end
-		end
-		addedline = true
-	end
-end
+--local addedline = false
+--local function AddLine(tooltip, ...)
+	--if addedline == false then
+	--	local itemName, itemLink = tooltip:GetItem()
+	--	for k,v in pairs(NeedOrGreedDB["Reagents"][itemName]) do
+	--		tradeskill = strsplit("~", v, "1")
+	--		if NeedOrGreedDB[tradeskill] ~= nil then
+	--			for k,v in pairs(NeedOrGreedDB["Accounts"]) do
+		--			trade = strsub(tradeskill, 1, (strlen(tradeskill) - 3))
+		--			if v == "trade" then
+		--				tooltip:AddLine(k .. " - " .. v)
+		--			end
+		--		end
+	--		end
+	--	end
+	--	addedline = true
+--	end
+--end
 
 local function ClearLine(tooltip, ...)
 	addedline = false
 end
 
-GameTooltip:HookScript("OnTooltipSetItem", AddLine)
+--GameTooltip:HookScript("OnTooltipSetItem", AddLine)
 GameTooltip:HookScript("OnTooltipCleared", ClearLine)
 
 -- this hooks the LootFrame update function to try and change the border of items that are being tracked
@@ -1198,9 +1198,10 @@ hooksecurefunc("LootFrame_UpdateButton", function(index)
 	local lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(index)
 	if lootName == "Chunk of Boar Meat" then
 			if Color:GetChecked() == 1 then
-				SetItemButtonNormalTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
+				SetItemButtonTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
 				SetItemButtonNameFrameVertexColor(_G["LootButton"..index], 247, 0, 119)
 				SetItemButtonNormalTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
+				_G["LootButton"..index.."Text"]:SetVertexColor(247, 0, 119)
 			end
 			ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
 	end
