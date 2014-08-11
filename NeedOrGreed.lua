@@ -1018,7 +1018,7 @@ local function CreateReagents()
 ["Fiery Core"] = {"TailoringTab~Flarecore Gloves~Flarecore Leggings~Flarecore Mantle~Flarecore Robe"},["Lava Core"] = {"TailoringTab~Flarecore Leggings~Flarecore Mantle~Flarecore Robe"},["Frozen Rune"] = {"TailoringTab~Glacial Cloak~Glacial Gloves~Glacial Vest~Glacial Wrists"},["Huge Emerald"] = {"BlacksmithTab~Runic Plate Helm~Wildthorn Mail~Serenity~Masterwork Stormhammer~Helm of the Great Chief~Enchanted Thorium Leggings~Enchanted Thorium Breastplate~Enchanted Battlehammer~Dawnbringer Shoulders~Annihilator~Thick Obsidian Breastplate~Nightfall~Invulnerable Mail","EngineeringTab~Master Engineer's Goggles","JewelcraftingTab~Emerald Crown of Destruction~Living Emerald Pendant~Emerald Lion Ring~Figurine-Emerald Owl","TailoringTab~Gloves of Spell Mastery"},["Essence of Air"] = {"AlchemyTab~Transmute: Air to Fire","EnchantingTab~Enchant 2H Weapon - Agility~Enchant Weapon - Agility~Enchant Weapon - Icy Chill","EngineeringTab~Force Reactive Disk","LeatherworkingTab~Mongoose Boots~Stormshroud Armor~Stormshroud Gloves~Stormshroud Pants~Stormshroud Shoulders", "TailoringTab~Robe of the Archmage"},
 ["Pandaren Peach"] = {"CookingTab~Dried Peaches~Four Senses Brew~Peach Pie~Sliced Peaches~Tangy Yogurt"},["Ice Cold Milk"] = {"CookingTab~Bread of the Dead~Clam Chowder~Delicious Chocolate Cake~Winter Veil Egg Nog"},["Raw Brilliant Smallfish"] = {"CookingTab~Brilliant Smallfish"},["Stringy Wolf Meat"] = {"CookingTab~Charred Wolf Meat~Spiced Wolf Meat"},["Meaty Bat Wing"] = {"CookingTab~Crispy Bat Wing"},
 ["Small Egg"] = {"CookingTab~Delicious Chocolate Cake~Gingerbread Cookie~Herb Baked Egg~Winter Veil Egg Nog"},["Lynx Meat"] = {"CookingTab~Lynx Steak"},["Chunk of Boar Meat"] = {"CookingTab~Roasted Boar Meat~Westfall Stew"},["Moongraze Stag Tenderloin"] = {"CookingTab~Roasted Moongraze Tenderloin"},["Raw Slitherskin Mackerel"] = {"CookingTab~Slitherskin Mackerel"},
-["Flask of Stormwind Tawny"] = {"CookingTab~Delicious Chocolate Cake"},["Mageroyal"] = {"CookingTab~Delicious CHocolate Cake", "AlchemyTab~Elixir of Wisdom~Lesser Mana Potion~Minor Mana Potion~Minor Rejuvination Potion"},["Dig Rat"] = {"CookingTab~Dig Rat Stew"},["Big Bear Meat"] = {"CookingTab~Big Bear Steak"},["Small Spider Leg"] = {"CookingTab~Kaldorei Spider Kabob"},
+["Flask of Stormwind Tawny"] = {"CookingTab~Delicious Chocolate Cake"},["Mageroyal"] = {"CookingTab~Delicious Chocolate Cake", "AlchemyTab~Elixir of Wisdom~Lesser Mana Potion~Minor Mana Potion~Minor Rejuvination Potion"},["Dig Rat"] = {"CookingTab~Dig Rat Stew"},["Big Bear Meat"] = {"CookingTab~Big Bear Steak"},["Small Spider Leg"] = {"CookingTab~Kaldorei Spider Kabob"},
 ["Crag Boar Rib"] = {"CookingTab~Beer Basted Boar Ribs"},["Scorpid Stinger"] = {"CookingTab~Scorpid Surprise"},["Kodo Meat"] = {"CookingTab~Roasted Kodo Meat"},["Bear Meat"] = {"CookingTab~Blood Sausage~Smoked Bear Meat"},["Stag Flank"] = {"CookingTab~Venison Jerky"},
 ["Bat Flesh"] = {"CookingTab~Bat Bites"},["Clam Meat"] = {"CookingTab~Boiled Clams~Clam Chowder"},["Coyote Meat"] = {"CookingTab~Coyote Steak"},["Soft Frenzy Flesh"] = {"CookingTab~Fillet of Frenzy"},["Goretusk Liver"] = {"CookingTab~Goretusk Liver Pie"},
 ["Raw Loch Frenzy"] = {"CookingTab~Loch Frenzy Delight"},["Raw Longjaw Mud Snapper"] = {"CookingTab~Longjaw Mud Snapper"},["Raw Rainbow Fin Albacore"] = {"CookingTab~Rainbow Fin Albacore"},["Strider Meat"] = {"CookingTab~Strider Stew"},["Golden Carp"] = {"CookingTab~Fish Cake~Golden Carp Consomme~Green Curry Fish~Toasted Fish Jerky"},
@@ -1252,30 +1252,36 @@ LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
 end)
 
 -- This is the tooltip hook. It will add the players and the respective tradeskills to the tooltip if account wide is checked
---local addedline = false
---local function AddLine(tooltip, ...)
-	--if addedline == false then
-	--	local itemName, itemLink = tooltip:GetItem()
-	--	for k,v in pairs(NeedOrGreedDB["Reagents"][itemName]) do
-	--		tradeskill = strsplit("~", v, "1")
-	--		if NeedOrGreedDB[tradeskill] ~= nil then
-	--			for k,v in pairs(NeedOrGreedDB["Accounts"]) do
-		--			trade = strsub(tradeskill, 1, (strlen(tradeskill) - 3))
-		--			if v == "trade" then
-		--				tooltip:AddLine(k .. " - " .. v)
-		--			end
-		--		end
-	--		end
-	--	end
-	--	addedline = true
---	end
---end
+local addedline = false
+local function AddLine(tooltip, ...)
+	local trade
+	if addedline == false then
+		local itemName, itemLink = tooltip:GetItem()
+		if NeedOrGreedDB["Reagents"][itemName] ~= nil then
+			for k,v in pairs(NeedOrGreedDB["Reagents"][itemName]) do
+				tradeskill = strsplit("~", v, "2")
+				if tradeskill == "CookingTab" then
+					tooltip:AddLine("Cooking - All Characters")
+				end
+				for k,v in pairs(NeedOrGreedDB["Accounts"]) do
+					for k1, v1 in pairs(NeedOrGreedDB["Accounts"][k]) do
+						trade = strsub(tradeskill, 1, (strlen(tradeskill) - 3))
+						if v1 == trade then
+							tooltip:AddLine(v1 .. " - " .. k)
+						end
+					end
+				end
+			end
+			addedline = true
+		end
+	end
+end
 
 local function ClearLine(tooltip, ...)
 	addedline = false
 end
 
---GameTooltip:HookScript("OnTooltipSetItem", AddLine)
+GameTooltip:HookScript("OnTooltipSetItem", AddLine)
 GameTooltip:HookScript("OnTooltipCleared", ClearLine)
 
 -- this hooks the LootFrame update function to try and change the border of items that are being tracked
