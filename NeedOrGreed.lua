@@ -1166,29 +1166,21 @@ LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	end
 end)
 
--- This is the tooltip hook. It will add the auction house line to the tooltip when an item is hovered over.
--- May want to add the items that can use it and the characters that use it
+-- This is the tooltip hook. It will add the players and the respective tradeskills to the tooltip if account wide is checked
 local addedline = false
 local function AddLine(tooltip, ...)
 	if addedline == false then
 		local itemName, itemLink = tooltip:GetItem()
-		local name, texture, count, quality, canUse, level, levelColHeader, minBid,
-		minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
-		ownerFullName, saleStatus, itemId, hasAllInfo = GetAuctionItemInfo("list", 1)
-		if hasAllInfo then
-			if buyoutPrice > 0 then
-				local gold = buyoutPrice / 10000
-				local silver = (buyoutPrice % 10000) / 100
-				local copper = (buyoutPrice % 10000) % 100
-				tooltip:AddLine("Auction Buyout: " .. gold .. "g " .. silver .. "s " .. copper .. "c")
-			else
-				local gold = minBid / 10000
-				local silver = (minBid % 10000) / 100
-				local copper = (minBid % 10000) % 100
-				tooltip:Addline("Auction Starting Bid: " .. gold .. "g " .. silver .. "s " .. copper .. "c")
+		for k,v in pairs(NeedOrGreedDB["Reagents"][itemName]) do
+			tradeskill = strsplit("~", v, "1")
+			if NeedOrGreedDB[tradeskill] ~= nil then
+				for k,v in pairs(NeedOrGreedDB["Accounts"]) do
+					trade = strsub(tradeskill, 1, (strlen(tradeskill) - 3))
+					if v == "trade" then
+						tooltip:AddLine(k .. " - " .. v)
+					end
+				end
 			end
-		else
-			tooltip:AddLine("Auction not found.")
 		end
 		addedline = true
 	end
