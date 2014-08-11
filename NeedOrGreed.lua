@@ -1233,6 +1233,7 @@ local function SplitUpLoot(lootName, found)
 			end
 		end 
 	end
+	return found
 end
 
 -- This is the loot event. It gets the info from the loot inventory and alerts if it is a reagent that is needed
@@ -1246,7 +1247,7 @@ LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
 		local lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(count)
 		count = count + 1
 		if NeedOrGreedPerCharDB["Reagents"][lootName] ~= nil then
-			SplitUpLoot(lootName, found)
+			found = SplitUpLoot(lootName, found)
 		end
 	end
 	if found == true then
