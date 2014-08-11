@@ -1,24 +1,11 @@
+NeedOrGreedDB = {}
+NeedOrGreedDB["Reagents"] = {["Linen Cloth"] = {"TailoringTab~Bolt of Linen Cloth"},
+ ["Light Leather"] = {"TailoringTab~Simple Linen Boots~Linen Boots~Barbaric Linen Vest~Soft-soled Linen Boots~Red Woolen Boots~Woolen Boots"} }
 
-local default = {}
-			default["Sound"] = true
-			default["Color"] = true
-			default["AccountWide"] = true
-			default["Alchemy"] = true
-			default["Blacksmithing"] = true
-			default["Cooking"] = true
-			default["Enchanting"] = true
-			default["Engineering"] = true
-			default["Inscription"] = true
-			default["Jewelcrafting"] = true
-			default["Leatherworking"] = true
-			default["Tailoring"] = true
-			default["Custom"] = true
-			
-			NeedOrGreedDB = {}
-			NeedOrGreedDB["Settings"] = default
-      NeedOrGreedPerCharDB = {}
-      NeedOrGreedPerCharDB["Settings"] = {}
-for k, v in pairs(NeedOrGreedDB["Settings"]) do 
-  NeedOrGreedPerCharDB["Settings"][k] = v
+for k, v in pairs(NeedOrGreedDB["Reagents"]) do 
+  print(k, v)
+end 
+
+for k, v in pairs(NeedOrGreedDB["Reagents"]["Light Leather"]) do 
   print(k, v)
 end 

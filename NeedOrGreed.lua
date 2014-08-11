@@ -1002,6 +1002,57 @@ local function CreateTailoring()
 		"Crafted Malevolent Gladiator's Treads of Meditation"}
 end
 
+local function CreateReagents()
+	NeedOrGreedDB["Reagents"] = {["Linen Cloth"] = {"TailoringTab~Bolt of Linen Cloth"},["Light Leather"] = {"TailoringTab~Simple Linen Boots~Linen Boots~Barbaric Linen Vest~Soft-soled Linen Boots~Red Woolen Boots~Woolen Boots"},["Wool Cloth"] = {"TailoringTab~Bolt of Woolen Cloth"},["Small Lustrous Pearl"] = {"TailoringTab~Pearl-clasped Cloak~Heavy Woolen Cloak"},["Medium Leather"] = {"TailoringTab~Reinforced Woolen Shoulders~Spidersilk Boots"},
+["Silk Cloth"] = {"TailoringTab~Bolt of Silk Cloth"},["Spider's Silk"] = {"TailoringTab~Spidersilk Boots~Spidersilk Drape~Lesser Wizard's Robe~Spider Silk Slippers~Robes of Arcana"},["Iridescent Pearl"] = {"TailoringTab~Spidersilk Boots~Phoenix Gloves~Phoenix Pants"},["Elixir of Wisdom"] = {"TailoringTab~Gloves of Meditation"},["Heavy Leather"] = {"TailoringTab~Azure Silk Gloves~Hands of Darkness~Truefaith Gloves~Small Silk Pack~Green Silk Pack~Earthen Silk Belt~Star Belt"},
+["Shadow Protection Potion"] = {"TailoringTab~Hands of Darkness"},["Healing Potion"] = {"TailoringTab~Truefaith Gloves"},["Thick Spider's Silk"] = {"TailoringTab~Enchanter's Cowl~Boots of the Enchanter~Spider Belt~Icy Cloak"},["Elemental Earth"] = {"TailoringTab~Earthen Vest~Robe of Power~Earthen Silk Belt"},["Shadow Oil"] = {"TailoringTab~Shadow Hood"},
+["Mageweave Cloth"] = {"TailoringTab~Bolt of Mageweave"},["Elemental Water"] = {"TailoringTab~Azure Silk Belt~Robe of Power"},["Iron Buckle"] = {"TailoringTab~Azure Silk Belt~Crimson Silk Belt~Spider Belt~Earthen Silk Belt~Star Belt"},["Fire Oil"] = {"TailoringTab~Crimson Silk Cloak~Crimson Silk Shoulders~Crimson Silk Gloves"},["Mana Potion"] = {"TailoringTab~Long Silken Cloak~Crimson Silk Robe"},
+["Elemental Fire"] = {"TailoringTab~Robe of Power~Crimson Silk Robe~Crimson Silk Gloves~Cloak of Fire"},["Elemental Air"] = {"TailoringTab~Robe of Power"},["Frost Oil"] = {"TailoringTab~Icy Cloak"},["Naga Scale"] = {"TailoringTab~Azure Shoulders"},["Citrine"] = {"TailoringTab~Star Belt"},
+["Thick Leather"] = {"TailoringTab~Crimson Silk Gloves~Black Mageweave Boots~Shadoweave Boots~Dress Shoes"},["Shadow Silk"] = {"TailoringTab~Shadoweave Pants~Shadoweave Robe~Shadoweave Gloves~Shadoweave Shoulders~Shadoweave Boots~Shadoweave Mask"},["Wildvine"] = {"TailoringTab~Dreamweave Gloves~Dreamweave Vest~Dreamweave Circlet"},["Heart of the Wild"] = {"TailoringTab~Dreamweave Gloves~Dreamweave Vest~Dreamweave Circlet"},["Heart of Fire"] = {"TailoringTab~Cindercloth Robe~Cindercloth Vest~Cindercloth Gloves~Cloak of Fire"},
+["Runecloth"] = {"TailoringTab~Bolt of Runecloth"},["Truesilver Bar"] = {"TailoringTab~Dreamweave Circlet"},["Jade"] = {"TailoringTab~Dreamweave Circlet"},["Firebloom"] = {"TailoringTab~Festival Dress~Festival Suit"},["Felcloth"] = {"TailoringTab~Mooncloth~Felcloth Pants~Felcloth Bag~Robe of Winter Night~Felcloth Boots~Felcloth Hood~Core Felcloth Bag"},
+["Globe of Water"] = {"TailoringTab~Frostweave Robe"},["Vision Dust"] = {"TailoringTab~Enchanted Mageweave Pouch"},["Ironweb Spider Silk"] = {"TailoringTab~Runecloth Robe~Runecloth Tunic~Runecloth Cloak~Felcoth Bag~Runecloth Pants~Argent Boots~Wisdom of the Timbermaw~Core Felcloth Bag~Flarecore Leggings~Flarecore Robe~Glacial Cloak~Glacial Gloves~Glacial Vest~Glacial Wrists"},["Rugged Leather"] = {"TailoringTab~Soul Pouch~Runecloth Bag~Gordok Ogre Suit~Runecloth Boots~Felcloth Boots"},["Ichor of Undeath"] = {"TailoringTab~Soul Pouch"},
+["Ghost Dye"] = {"TailoringTab~Ghostweave Belt~Ghostweave Gloves~Ghostweave Vest~Ghostweave Pants~Belt of the Archmage~Gloves of Spell Mastery~Truefaith Vestments"},["Gold Bar"] = {"TailoringTab~Brightcloth Gloves~Brightcloth Robe~Brightcloth Cloak~Brightcloth Pants"},["Ogre Tannin"] = {"TailoringTab~Gordok Ogre Suit"},["Essence of Fire"] = {"AlchemyTab~Transmute: Fire to Earth","BlacksmithTab~Sulfuron Hammer~Blazing Rapier~Fiery Plate Gauntlets","EnchantingTab~Enchant Gloves-Fire Power~Enchant Weapon - Fiery Weapon~Smoking Heart of the Mountain","EngineeringTab~High-powered Flashlight~Gyrofreeze Ice Reflector~Flawless Arcanite Rifle~Fused Wiring","JewelcraftingTab~Band of Natural Fire","TailoringTab~Cloak of Fire~Cindercloth Cloak~Cindercloth Pants~Belt of the Archmage~Core Felcloth Bag~Flarecore Gloves~Flarecore Leggings~Flarecore Robe~Flarecore Wraps~Robe of the Archmage~Robe of the Void~Inferno Gloves"},["Purple Lotus"] = {"TailoringTab~Cenarion Herb Bag"},
+["Greater Eternal Essence"] = {"TailoringTab~Enchanted Runecloth Bag"},["Dream Dust"] = {"TailoringTab~Wizardweave Leggings"},["Enchanted Leather"] = {"BlacksmithTab~Black Grasp of the Destroyer~Obsidian Mail Tunic~Sageblade~Annihilator~Arcanite Champion~Arcanite Reaper~Bloodsoul Gauntlets~Dark Iron Destroyer~Dark Iron Reaver~Darkrune Gauntlets~Frostguard~Hammer of the Titans~Heartseeker~Light Obsidian Belt~Masterwork Stormhammer","EngineeringTab~Spellpower Goggles Xtreme Plus~Master Engineer's Goggles~Flawless Arcanite Rifle~Bloodvine Goggles","LeatherworkingTab~Polar Bracers~Polar Gloves~Polar Tunic~Shifting Cloak~Blue Dragonscale Shoulders~Bramblewood Belt~Bramblewood Boots~Golden Mantle of the Dawn~Stormshroud Gloves~Timbermaw Brawlers~Runic Leather Armor~Runic Leather Pants~Runic Leather Shoulders","TailoringTab~Felcoth Bag~Argent Boots~Flarecore Gloves~Flarecore Mantle~Flarecore Wraps~Gloves of Spell Mastery~Mooncloth Circlet~Runed Stygian Belt~Big Bag of Enchantment"},["Dark Rune"] = {"TailoringTab~Felcloth Bag"},["Essence of Undeath"] = {"TailoringTab~Robe of Winter Night"},
+["Essence of Water"] = {"AlchemyTab~Transmute: Water to Air~Transmute: Water to Undeath","BlacksmithTab~Icebane Bracers~Icebane Breastplate~Icebane Gauntlets~Dawnbringer Shoulders~Enchanted Thorium Breastplate~Enchanted Thorium Leggings~Frostguard~Storm Gauntlets","EnchantingTab~Enchant Bracer - Mana Regeneration~Enchant Gloves - Frost Power~Enchant Weapon - Healing Power~Enchant Weapon - Icy Chill","EngineeringTab~Hyper-Radiant Flame Reflector","LeatherworkingTab~Frostsaber Leggings~Frostsaber Gloves~Frostsaber Boots~Dawn Treaders~Polar Tunic~Polar Gloves~Polar Bracers~Icy Scale Gauntlets~Icy Scale Breastplate~Icy Scale Bracers","TailoringTab~Robe of Winter Night~Belt of the Archmage~Glacial Cloak~Glacial Gloves~Glacial Vest~Glacial Wrists~Robe of the Archmage"},["Mooncloth"] = {"TailoringTab~Mooncloth Boots~Mooncloth Leggings~Belt of the Archmage~Flarecore Leggings~Flarecore Robe~Flarecore Wraps~Gloves of Spell Mastery~Truefaith Vestments~Argent Shoulders~Bloodvine Boots~Bloodvine Leggings~Bloodvine Vest~Bottomless Bag~Living Breastplate~Mantle of the Timbermaw~Mooncloth Circlet~Mooncloth Gloves~Mooncloth Robe~Mooncloth Shoulders~Mooncloth Vest~Sylvan Crown~Mooncloth Bag~Satchel of Cenarius"},["Black Pearl"] = {"TailoringTab~Mooncloth Boots"},["Golden Pearl"] = {"EnchantingTab~Enchant Weapon - Spellpower","TailoringTab~Argent Boots~Gloves of Spell Mastery~Truefaith Vestments~Mooncloth Gloves~Mooncloth Robe"},["Guardian Stone"] = {"TailoringTab~Argent Boots"},
+["Essence of Earth"] = {"AlchemyTab~Transmute: Earth to Life~Transmute: Earth to Water","BlacksmithTab~Thorium Shield Spike~Heavy Timbermaw Belt~Jagged Obsidian Shield~Stronghold Gauntlets~Thick Obsidian Breastplate~Titanic Leggings~Enchanted Thorium Breastplate~Enchanted Thorium Helm~Hammer of the Titans~Heavy Obsidian Belt~Heavy Timbermaw Boots~Masterwork Stormhammer","EnchantingTab~Enchant Weapon - Strength","EngineeringTab~Force Reactive Disk~Biznicks 247x128 Accurascope~Flawless Arcanite Rifle","JewelcraftingTab~Onslaught Ring","LeatherworkingTab~Volcanic Breastplate~Volcanic Shoulders","TailoringTab~Wisdom of the Timbermaw~Robe of the Archmage~Mantle of the Timbermaw"},["Living Essence"] = {"TailoringTab~Wisdom of the Timbermaw"},["Netherweave Cloth"] = {"TailoringTab~Netherweave Net~Bolt of Netherweave"},["Large Brilliant Shard"] = {"TailoringTab~Belt of the Archmage"},["Core Leather"] = {"TailoringTab~Core Felcloth Bag"},
+["Fiery Core"] = {"TailoringTab~Flarecore Gloves~Flarecore Leggings~Flarecore Mantle~Flarecore Robe"},["Lava Core"] = {"TailoringTab~Flarecore Leggings~Flarecore Mantle~Flarecore Robe"},["Frozen Rune"] = {"TailoringTab~Glacial Cloak~Glacial Gloves~Glacial Vest~Glacial Wrists"},["Huge Emerald"] = {"BlacksmithTab~Runic Plate Helm~Wildthorn Mail~Serenity~Masterwork Stormhammer~Helm of the Great Chief~Enchanted Thorium Leggings~Enchanted Thorium Breastplate~Enchanted Battlehammer~Dawnbringer Shoulders~Annihilator~Thick Obsidian Breastplate~Nightfall~Invulnerable Mail","EngineeringTab~Master Engineer's Goggles","JewelcraftingTab~Emerald Crown of Destruction~Living Emerald Pendant~Emerald Lion Ring~Figurine-Emerald Owl","TailoringTab~Gloves of Spell Mastery"},["Essence of Air"] = {"AlchemyTab~Transmute: Air to Fire","EnchantingTab~Enchant 2H Weapon - Agility~Enchant Weapon - Agility~Enchant Weapon - Icy Chill","EngineeringTab~Force Reactive Disk","LeatherworkingTab~Mongoose Boots~Stormshroud Armor~Stormshroud Gloves~Stormshroud Pants~Stormshroud Shoulders", "TailoringTab~Robe of the Archmage"},
+["Pandaren Peach"] = {"CookingTab~Dried Peaches~Four Senses Brew~Peach Pie~Sliced Peaches~Tangy Yogurt"},["Ice Cold Milk"] = {"CookingTab~Bread of the Dead~Clam Chowder~Delicious Chocolate Cake~Winter Veil Egg Nog"},["Raw Brilliant Smallfish"] = {"CookingTab~Brilliant Smallfish"},["Stringy Wolf Meat"] = {"CookingTab~Charred Wolf Meat~Spiced Wolf Meat"},["Meaty Bat Wing"] = {"CookingTab~Crispy Bat Wing"},
+["Small Egg"] = {"CookingTab~Delicious Chocolate Cake~Gingerbread Cookie~Herb Baked Egg~Winter Veil Egg Nog"},["Lynx Meat"] = {"CookingTab~Lynx Steak"},["Chunk of Boar Meat"] = {"CookingTab~Roasted Boar Meat~Westfall Stew"},["Moongraze Stag Tenderloin"] = {"CookingTab~Roasted Moongraze Tenderloin"},["Raw Slitherskin Mackerel"] = {"CookingTab~Slitherskin Mackerel"},
+["Flask of Stormwind Tawny"] = {"CookingTab~Delicious Chocolate Cake"},["Mageroyal"] = {"CookingTab~Delicious CHocolate Cake", "AlchemyTab~Elixir of Wisdom~Lesser Mana Potion~Minor Mana Potion~Minor Rejuvination Potion"},["Dig Rat"] = {"CookingTab~Dig Rat Stew"},["Big Bear Meat"] = {"CookingTab~Big Bear Steak"},["Small Spider Leg"] = {"CookingTab~Kaldorei Spider Kabob"},
+["Crag Boar Rib"] = {"CookingTab~Beer Basted Boar Ribs"},["Scorpid Stinger"] = {"CookingTab~Scorpid Surprise"},["Kodo Meat"] = {"CookingTab~Roasted Kodo Meat"},["Bear Meat"] = {"CookingTab~Blood Sausage~Smoked Bear Meat"},["Stag Flank"] = {"CookingTab~Venison Jerky"},
+["Bat Flesh"] = {"CookingTab~Bat Bites"},["Clam Meat"] = {"CookingTab~Boiled Clams~Clam Chowder"},["Coyote Meat"] = {"CookingTab~Coyote Steak"},["Soft Frenzy Flesh"] = {"CookingTab~Fillet of Frenzy"},["Goretusk Liver"] = {"CookingTab~Goretusk Liver Pie"},
+["Raw Loch Frenzy"] = {"CookingTab~Loch Frenzy Delight"},["Raw Longjaw Mud Snapper"] = {"CookingTab~Longjaw Mud Snapper"},["Raw Rainbow Fin Albacore"] = {"CookingTab~Rainbow Fin Albacore"},["Strider Meat"] = {"CookingTab~Strider Stew"},["Golden Carp"] = {"CookingTab~Fish Cake~Golden Carp Consomme~Green Curry Fish~Toasted Fish Jerky"},
+["Crunchy Spider Leg"] = {"CookingTab~Crunchy Spider Surprise"},["Swiftthistle"] = {"CookingTab~Thistle Tea", "AlchemyTab~Elixir of Lesser Agility~Elixir of Minor Agility~Holy Protection Potion~Swiftness Potion~Swin Speed Potion"},["Crawler Meat"] = {"CookingTab~Crab Cake"},["Crocolisk Meat"] = {"CookingTab~Crocolisk Steak"},["Boar Ribs"] = {"CookingTab~Dry Pork Ribs~Succulent Pork Ribs"},
+["Raw Sagefish"] = {"CookingTab~Smoked Sagefish"},["Crawler Claw"] = {"CookingTab~Cooked Crab Claw"},["Deviate Fish"] = {"CookingTab~Savory Deviate Delight", "AlchemyTab~Elixir of Giant Growth"},["Murloc Fin"] = {"CookingTab~Murloc Fin Soup"},["Tough Condor Meat"] = {"CookingTab~Redridge Goulash"},
+["Raw Bristle Whisker Catfish"] = {"CookingTab~Bristle Whisker Catfish"},["Thunder Lizard Tail"] = {"CookingTab~Crispy Lizard Tail"},["Lean Wolf Flank"] = {"CookingTab~Lean Wolf Steak~Seasoned Wolf Kabob"},["Gooey Spider Leg"] = {"CookingTab~Gooey Spider Cake"},["Stag Meat"] = {"CookingTab~Lean Venison"},
+["Tender Crocolisk Meat"] = {"CookingTab~Crocolisk Gumbo~Heavy Crocolisk Stew"},["Tangy Clam Meat"] = {"CookingTab~Goblin Deviled Clams"},["Lion Meat"] = {"CookingTab~Hot Lion Chops~Tasty Lion Steak"},["Raptor Egg"] = {"CookingTab~Curiously Tasty Omelet"},["Goldthorn"] = {"CookingTab~Goldthorn Tea", "AlchemyTab~Arcane Elixir~Catseye Elixir~Elixir of Agility~Elixir of Fortitude~Elixir of Greater Agility~Elixir of Greater Defense~Frost Protection Potion~Greater Mana Potion~Lesser Stoneshield Potion~Oil of Immolation~Restorative Potion"},
+["Raw Rockscale Cod"] = {"CookingTab~Rockscale Cod"},["Buzzard Wing"] = {"CookingTab~Barbecued Buzzard Wing"},["Mystery Meat"] = {"CookingTab~Carrion Surprise~Dragonbreath Chili~Mystery Stew"},["Giant Clam Meat"] = {"CookingTab~Giant Clam Scorcho"},["Red Wolf Meat"] = {"CookingTab~Hot Wolf Ribs"},
+["Tiger Meat"] = {"CookingTab~Jungle Stew"},["Raw Mithril Head Trout"] = {"CookingTab~Mithril Head Trout"},["Raptor Flesh"] = {"CookingTab~Roast Raptor"},["Raw Greater Sagefish"] = {"CookingTab~Sagefish Delight"},["Turtle Meat"] = {"CookingTab~Soothing Turtle Bisque"},
+["Heavy Kodo Meat"] = {"CookingTab~Heavy Kodo Stew"},["White Spider Meat"] = {"CookingTab~Spider Sausage"},["Raw Glossy Mightfish"] = {"CookingTab~Cooked Glossy Mightfish"},["Raw Redgill"] = {"CookingTab~Filet of Redgill"},["Giant Egg"] = {"CookingTab~Monster Omelet"},
+["Tender Crab Meat"] = {"CookingTab~Spiced Chili Crab"},["Raw Spotted Yellowtail"] = {"CookingTab~Spotted Yellowtail"},["Tender Wolf Meat"] = {"CookingTab~Tender Wolf Steak"},["Zesty Clam Meat"] = {"CookingTab~Clamlette Magnifique~Undermine Clam Chowder"},["Winter Squid"] = {"CookingTab~Grilled Squid"},
+["Bear Flank"] = {"CookingTab~Charred Bear Kabobs~Juicy Bear Burger"},["Raw Nightfin Snapper"] = {"CookingTab~Nightfin Soup"},["Raw Sunscale Salmon"] = {"CookingTab~Poached Sunscale Salmon"},["Raw Whitescale Salmon"] = {"CookingTab~Baked Salmon"},["Darkclaw Lobster"] = {"CookingTab~Lobster Stew"},
+["Large Raw Mightfish"] = {"CookingTab~Mightfish Steak"},["Runn Tum Tuber"] = {"CookingTab~Runn Tum Tuber Surprise"},["Sandworm Meat"] = {"CookingTab~Smoked Desert Dumplings"},["Barbed Gill Trout"] = {"CookingTab~Blackened Trout~Stewed Trout"},["Bloodfin Catfish"] = {"CookingTab~Broiled Bloodfin"},
+["Buzzard Meat"] = {"CookingTab~Buzzard Bites~Kibler's Bits"},["Jaggal Clam Meat"] = {"CookingTab~Clam Bar"},["Spotted Feltail"] = {"CookingTab~Feltail Delight"},["Ravager Flesh"] = {"CookingTab~Ravager Dog"},["Clefthoof Meat"] = {"CookingTab~Roasted Clefthoof~Stormchops"},
+["Lightning Eel"] = {"CookingTab~Stormchops"},["Goblin Rocket Fuel"] = {"CookingTab~Dirge's Kickin' Chimaerok Chops", "EngineeringTab~Ectoplasmic Distiller~Goblin Rocket Boots~Goblin Rocket Helmet~Cluster Launcher~Firework Launcher~Goblin Dragon Gun~The Big One"},["Deeprock Salt"] = {"CookingTab~Dirge's Kickin' Chimaerok Chops", "LeatherworkingTab~Cured Thick Hide", "EngineeringTab~Snake Burst Firework"},["Chimaerok Tenderloin"] = {"CookingTab~Dirge's Kickin' Chimaerok Chops"},["Zangarian Sporefish"] = {"CookingTab~Blackened Sporefish"},
+["Chunk o' Basilisk"] = {"CookingTab~Blackened Basilisk"},["Figluster's Mudfish"] = {"CookingTab~Grilled Mudfish"},["Icefin Bluefish"] = {"CookingTab~Poached Bluefish"},["Crescent-Tail Skullfish"] = {"CookingTab~Skullfish Soup"},["Talbuk Venison"] = {"CookingTab~Spicy Hot Talbuk~Talbuk Steak"},
+["Golden Darter"] = {"CookingTab~Golden Fish Sticks"},["Warped Flesh"] = {"CookingTab~Warp Burger"},["Serpent FLesh"] = {"CookingTab~Crunchy Serpent"},["Raptor Ribs"] = {"CookingTab~Mok'Nathal Shortribs"},["Chilled Meat"] = {"CookingTab~Critter Bites~Great Feast~Northern Stew"},
+["Succulent Clam Meat"] = {"CookingTab~Bad Clams~Dalaran Clam Chowder"},["Mote of Shadow"] = {"CookingTab~Bad Clams"},["Fangtooth Herring"] = {"CookingTab~Haunted Herring~Pickled Fangtooth~Spicy Fried Herring"},["Chunk o' Mammoth"] = {"CookingTab~Gigantic Feast~Great Feast~Last Week's Mammoth~Mammoth Meal~Mega Mammoth Meal~Spiced Mammoth Treats"},["Northern Egg"] = {"CookingTab~Tasty Cupcake"},
+["Bonescale Snapper"] = {"CookingTab~Grilled Bonescale~Snapper Extreme"},["Barrelhead Goby"] = {"CookingTab~Sauteed Goby"},["Rockfin Grouper"] = {"CookingTab~Gigantic Feast~Smoked Rockfin"},["Imperial Manta Ray"] = {"CookingTab~Baked Manta Ray~Imperial Manta Steak"},["Musselback Sculpin"] = {"CookingTab~Fish Feast~Grilled Sculpin~Poached Northern Sculpin"},
+["Nettlefish"] = {"CookingTab~Fish Feast~Poached Nettlefish~Small Feast~Spicy Blue Nettlefish"},["Rhino Meat"] = {"CookingTab~Hearty Rhino~Mighty Rhino Dogs~Rhino Dogs~Rhinolicious Wormsteak~Small Feast"},["Worg Haunch"] = {"CookingTab~Blackened Worg Steak~Roasted Worg~Very Burnt Worg~Worg Tartare"},["Shoveltusk Flank"] = {"CookingTab~Great Feast~Shoveltusk Steak~Tender Shoveltusk Steak~Tracker Snacks"},["Glacial Salmon"] = {"CookingTab~Firecracker Salmon~Fish Feast~Small Feast~Smoked Salmon"},
+["Worm Meat"] = {"CookingTab~Great Feast~Rhinolicious Wormsteak~Spiced Worm Burger~Worm Delight"},["Furious Crawdad"] = {"CookingTab~Spicy Crawdad"},["Huge Spotted Feltail"] = {"CookingTab~Fisherman's Feast"},["Enormous Barbed Gill Trout"] = {"CookingTab~Hot Buttered Trout"},["Borean Man O' War"] = {"CookingTab~Black Jelly"},
+["Dragonfin Angelfish"] = {"CookingTab~Blackened Dragonfin~Dragonfin Filet"},["Moonglow Cuttlefish"] = {"CookingTab~Cuttlesteak"},["Deep Sea Monsterbelly"] = {"CookingTab~Gigantic Feast"},["Toughened Flesh"] = {"CookingTab~Blackened Surprise","EngineeringTab~Goblin Barbecue"},["Delicate Wing"] = {"CookingTab~Broiled Dragon Feast~Feathered Lure"},
+["Mountain Trout"] = {"CookingTab~Broiled Mountain Trout"},["Lavascale Catfish"] = {"CookingTab~Lavascale Fillet~Lavascale Minestrone~Seafood Magnifique Feast"},["Striped Lurker"] = {"CookingTab~Lightly Fried Lurker~Lurker Lunch"},["Snake Eye"] = {"CookingTab~Salted Eye"},["Monstrous Claw"] = {"CookingTab~Seasoned Crab"},
+["Blood Shrimp"] = {"CookingTab~Hearty Seafood Soup~Whitecrest Gumbo"},["Highland Guppy"] = {"CookingTab~Pickled Guppy~Seafood Magnifique Feast"},["Giant Turtle Tongue"] = {"CookingTab~Tender Baked Turtle"},["Sharptooth"] = {"CookingTab~Fish Fry"},["Murglesnout"] = {"CookingTab~Scalding Murglesnout"},
+["Algaefin Rockfish"] ={"CookingTab~Baked Rockfish"},["Basilisk \"Liver\""] = {"CookingTab~Basilisk Liverdog"},["Crocolisk Tail"] = {"CookingTab~Beer-Basted Crocolisk~Crocolisk Au Gratin"},["Deepsea Sagefish"] = {"CookingTab~Delicious Sagefish Tail~Severed Sagefish Head"},["Blackbelly Mudfish"] = {"CookingTab~Blackbelly Sushi~Mushroom Sauce Mudfish"},
+["Dragon Flank"] = {"CookingTab~Broiled Dragon Feast~Grilled Dragon"},["Fathom Eel"] = {"CookingTab~Seafood Magnifique Feast~Skewered Eel"},["Emperor Salmon"] = {"CookingTab~Banquet of the Steamer~Fire Spirit Salmon~Great Banquet of the Steamer~Mogu Fish Stew~Spicy Salmon"},["Witchberries"] = {"CookingTab~Banana Infused Rum~Banquet of the Brew~Great Banquet of the Brew~Jade Witch Brew~Spicy Salmon"},["Striped Melon"] = {"CookingTab~Eternal Blossom Fish~Spicy Salmon"},
+["Jade Squash"]  = {"CookingTab~Banquet of the Steamer~Great Banquet of the Steamer~Jade Witch Brew~Spicy Vegetable Chips"},["Pink Turnip"] = {"CookingTab~Great Pandaren Banquet~Mad Brewer's Breakfast~Pandaren Banquet~Spicy Vegetable Chips"},["Juicycrunch Carrot"] = {"CookingTab~Banquet of the Pot~Braised Turtle~Great Banquet of the Pot~Sauteed Carrots~Spicy Vegetable Chips"},["Wildfowl Breast"] = {"CookingTab~Banquet of the Steamer~Great Banquet of the Steamer~Valley Stir Fry~Wildfowl Ginseng Soup~Wildfowl Roast"},["Mysterious Fortune Card"] = {"CookingTab~Fortune Cookie"},
+["Krasarang Paddlefish"] = {"CookingTab~Banquet of the Oven~Great Banquet of the Oven~Krasarang Fritters~Twin Fish Platter"},["Viseclaw Meat"] = {"CookingTab~Viseclaw Soup"},["Raw Tiger Steak"] = {"CookingTab~Charbroiled Tiger Steak~Chun Tian Spring Rolls~Great Pandaren Banquet~Pandaren Banquet"},["Giant Mantis Shrimp"] = {"CookingTab~Banquet of the Wok~Black Pepper Ribs and Shrimp~Great Banquet of the Wok~Shrimp Dumplings"},["Jade Lungfish"] = {"CookingTab~Eternal Blossom Fish~Swirling Mist Soup"},
+["Raw Turtle Meat"] = {"CookingTab~Banquet of the Oven~Braised Turtle~Great Banquet of the Oven~Sea Mist Rice Noodles"},["Scallions"] = {"CookingTab~Fire Spirit Salmon~Sea Mist Rice Noodles"},["Reef Octopus"] = {"CookingTab~Banquet of the Pot~Great Banquet of the Pot~Valley Stir Fry"},["Green Cabbage"] = {"CookingTab~Banquet of the Brew~Black Pepper Ribs and Shrimp~Great Banquet of the Brew"},["Redbelly Mandarin"] ={"CookingTab~Banquet of the Grill~Chun Tian SPring Rolls~Great Banquet of the Grill"},
+["Raw Crab Meat"] = {"CookingTab~Banquet of the Grill~Great Banquet of the Grill~Steamed Crab Surprise"},["White Turnip"] = {"CookingTab~Banquet of the Grill~Great Banquet of the Grill~Steamed Crab Surprise"},["Mogu Pumpkin"] = {"CookingTab~Banquet of the Oven~Great Banquet of the Oven~Mogu Fish Stew"},["Mushan Ribs"] = {"CookingTab~Banquet of the Pot~Black Pepper Ribs and Shrimp~Great Banquet of the Pot"},["Red Blossom Leek"] = {"CookingTab~Banquet of the Wok~Chun Tian Spring Rolls~Four Senses Brew~Great Banquet of the Wok"},
+["Raw Crocolisk Belly"] = {"CookingTab~Banquet of the Wok~Great Banquet of the Wok~Mogu Fish Stew"},["Aged Mogu'shan Cheese"] = {"CookingTab~Fluffy Silkfeather Omelet~Stuffed Lushrooms"},["Ancient Pandaren Spices"] = {"CookingTab~Seasoned Pomfruit Slices~Spiced Blossom Soup"},["Jewel Danio"] = {"CookingTab~Great Pandaren Banquet~Pandaren Banquet~Steamed Crab Surprise"},["Aged Balsamic Vinegar"] = {"CookingTab~Farmer's Delight~Mango Ice"},
+["Tiger Gourami"] = {"CookingTab~Sea Mist Rice Noodles"},["Tel'Abim Banana"] = {"CookingTab~Banana Infused Rum"},["Volatile Rum"] = {"CookingTab~Banana Infused Rum", "AlchemyTab~Goblin Rocket Fuel"}}
+end
+
 -- This is the startup action. It checks to see if this is the first time the addon has been run, or if the saved variable
 -- file has been deleted and sets the defaults again. It then checks to see if the character has changed its preferred settings
 -- and if so, uses those settings instead.
@@ -1038,6 +1089,7 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 			CreateJewelcrafting()
 			CreateLeatherworking()
 			CreateTailoring()
+			CreateReagents()
 			NeedOrGreedDB["CustomTab"] = {}
 				
 		end
@@ -1124,10 +1176,14 @@ StartUpFrame:SetScript("OnEvent", function(self,event,arg1,...)
 		if (NeedOrGreedPerCharDB["CustomTab"] == nil) then
 			NeedOrGreedPerCharDB["CustomTab"] = {}
 		end
+		if (NeedOrGreedPerCharDB["Reagents"] == nil) then
+			NeedOrGreedPerCharDB["Reagents"] = {}
+			for k, v in pairs(NeedOrGreedDB["Reagents"]) do NeedOrGreedPerCharDB["Reagents"][k] = v
+			end
+		end
 	end
 end)
 -- this sets the characters tradeskills in the db for account sharing
-
 local SkillsFrame = CreateFrame("Frame")
 SkillsFrame:RegisterEvent("SKILL_LINES_CHANGED")
 SkillsFrame:SetScript("OnEvent", function(self,event,arg1,...)
@@ -1144,6 +1200,41 @@ SkillsFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	end
 end)
 
+-- this splits up the reagents table to look for matching item in the DB
+local function SplitUpLoot(lootName, found)
+	for k, v in pairs(NeedOrGreedPerCharDB["Reagents"][lootName]) do
+		local tab, items = strsplit("~", NeedOrGreedPerCharDB["Reagents"][lootName][k], 2)
+		if items ~= nil then
+			local blah, count = string.gsub(items, "~", "~")
+			if count > 0 then
+				ChatFrame1:AddMessage("Step2")
+				local counter = 0
+				while count >= counter do
+					ChatFrame1:AddMessage("Step3")
+					local item, items = strsplit("~", items, 2)
+					if NeedOrGreedPerCharDB[tab] ~= nil then
+						ChatFrame1:AddMessage("Step4")
+						for k, v in pairs(NeedOrGreedPerCharDB[tab]) do
+							ChatFrame1:AddMessage("Step5")
+							if v == item then
+								ChatFrame1:AddMessage("Step6")
+								if Sound:GetChecked() == 1 then
+									ChatFrame1:AddMessage("Step7")
+									found = true
+								end
+								ChatFrame1:AddMessage(Sound:GetChecked())
+								ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
+								break
+							end
+						end
+					end
+					counter = counter + 1
+				end
+			end
+		end 
+	end
+end
+
 -- This is the loot event. It gets the info from the loot inventory and alerts if it is a reagent that is needed
 local LootFrame = CreateFrame("Frame")
 LootFrame:RegisterEvent("LOOT_OPENED")
@@ -1154,11 +1245,8 @@ LootFrame:SetScript("OnEvent", function(self,event,arg1,...)
 	while itemcount >= count do
 		local lootIcon, lootName, lootQuantity, lootQuality, locked, isQuestItem, questID, isActive = GetLootSlotInfo(count)
 		count = count + 1
-		if lootName == "Chunk of Boar Meat" then
-			if Sound:GetChecked() == 1 then
-				found = true
-			end
-			ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
+		if NeedOrGreedPerCharDB["Reagents"][lootName] ~= nil then
+			SplitUpLoot(lootName, found)
 		end
 	end
 	if found == true then
@@ -1203,6 +1291,5 @@ hooksecurefunc("LootFrame_UpdateButton", function(index)
 				SetItemButtonNormalTextureVertexColor(_G["LootButton"..index], 247, 0, 119)
 				_G["LootButton"..index.."Text"]:SetVertexColor(247, 0, 119)
 			end
-			ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
 	end
 end)

@@ -3,15 +3,15 @@
 
 count = 0
 names = []
-with open('Tailoring.txt', 'r') as inputs:
+with open('items/Reagents.txt', 'r') as inputs:
     names = inputs.readlines() 
 
 
         
-with open('newtailoring.txt', 'a') as newFile:
+with open('newreagents.txt', 'a') as newFile:
     for item in names:
         item = item.strip()
-        newFile.write('"' + item + '",')
+        newFile.write(item + ',')
         count = count + 1
         if count % 5 == 0:
             newFile.write('\n')
