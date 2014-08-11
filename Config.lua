@@ -265,6 +265,7 @@ scrollbar:SetPoint("TOPLEFT", panel, 530, -169)
 scrollbar:SetOrientation("VERTICAL")
 scrollbar:SetSize(16, 300)
 scrollbar:SetMinMaxValues(0, 872)
+scrollbar:SetValueStep(1)
 scrollbar:SetValue(0)
 scrollbar:CreateTexture("texture", "BACKGROUND")
 texture:SetAllPoints()
@@ -274,12 +275,19 @@ scrollbar:SetScript("OnValueChanged", function (self) scrollwrap:SetVerticalScro
 
 -- Create the content frame to put the items in
 local content = CreateFrame("ScrollingMessageFrame", "Content", scrollwrap)
-content:SetSize(250, 1500)
+content:SetSize(350, 1000)
 content:SetFontObject("GameFontNormal") 
---content:SetMaxLines(1000)
+content:SetMaxLines(100000)
 content:SetFading(false) 
-content:SetInsertMode("TOP")
+content:SetInsertMode("BOTTOM")
 content:EnableMouseWheel(true)
+content:SetScript("OnMouseWheel", function(self, delta)
+		if delta == 1 then
+			content:ScrollUp()
+		else
+			content:ScrollDown()
+		end
+end)
 
 --local test = content:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 --test:SetPoint("TOPLEFT")
