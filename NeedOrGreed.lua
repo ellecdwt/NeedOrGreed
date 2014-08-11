@@ -1207,22 +1207,15 @@ local function SplitUpLoot(lootName, found)
 		if items ~= nil then
 			local blah, count = string.gsub(items, "~", "~")
 			if count > 0 then
-				ChatFrame1:AddMessage("Step2")
 				local counter = 0
 				while count >= counter do
-					ChatFrame1:AddMessage("Step3")
 					local item, items = strsplit("~", items, 2)
 					if NeedOrGreedPerCharDB[tab] ~= nil then
-						ChatFrame1:AddMessage("Step4")
 						for k, v in pairs(NeedOrGreedPerCharDB[tab]) do
-							ChatFrame1:AddMessage("Step5")
 							if v == item then
-								ChatFrame1:AddMessage("Step6")
 								if Sound:GetChecked() == 1 then
-									ChatFrame1:AddMessage("Step7")
 									found = true
 								end
-								ChatFrame1:AddMessage(Sound:GetChecked())
 								ChatFrame1:AddMessage('You have looted ' .. lootName .. '!')
 								break
 							end
