@@ -1,89 +1,68 @@
-["Linen Cloth"] = {"TailoringTab-Bolt of Linen Cloth"}
-["Light Leather"] = {"TailoringTab-Simple Linen Boots","TailoringTab-Linen Boots","TailoringTab-Barbaric Linen Vest","TailoringTab-Soft-soled Linen Boots","TailoringTab-Red Woolen Boots"
-,"TailoringTab-Woolen Boots"}
-["Wool Cloth"] = {"TailoringTab-Bolt of Woolen Cloth"} 
-["Small Lustrous Pearl"] = {"TailoringTab-Pearl-clasped Cloak","TailoringTab-Heavy Woolen Cloak"}
-["Medium Leather"] = {"TailoringTab-Reinforced Woolen Shoulders","TailoringTab-Spidersilk Boots"}
-["Silk Cloth"] = {"TailoringTab-Bolt of Silk Cloth"}
-["Spider's Silk"] = {"TailoringTab-Spidersilk Boots","TailoringTab-Spidersilk Drape","TailoringTab-Lesser Wizard's Robe","TailoringTab-Spider Silk Slippers","TailoringTab-Robes of Arcana"}
-["Iridescent Pearl"] = {"TailoringTab-Spidersilk Boots""TailoringTab-Phoenix Gloves","TailoringTab-Phoenix Pants"}
-["Elixir of Wisdom"] = {"TailoringTab-Gloves of Meditation"}
-["Heavy Leather"] = {"TailoringTab-Azure Silk Gloves", "TailoringTab-Hands of Darkness","TailoringTab-Truefaith Gloves","TailoringTab-Small Silk Pack","TailoringTab-Green Silk Pack"
-,"TailoringTab-Earthen Silk Belt","TailoringTab-Star Belt"}
-["Shadow Protection Potion"] = {"TailoringTab-Hands of Darkness"}
-["Healing Potion"] = {"TailoringTab-Truefaith Gloves"}
-["Thick Spider's Silk"] = {"TailoringTab-Enchanter's Cowl","TailoringTab-Boots of the Enchanter","TailoringTab-Spider Belt","TailoringTab-Icy Cloak"}
-["Elemental Earth"] = {"TailoringTab-Earthen Vest","TailoringTab-Robe of Power","TailoringTab-Earthen Silk Belt"}
-["Shadow Oil"] = {"TailoringTab-Shadow Hood"}
-["Mageweave Cloth"] = {"TailoringTab-Bolt of Mageweave"}
-["Elemental Water"] = {"TailoringTab-Azure Silk Belt","TailoringTab-Robe of Power}
-["Iron Buckle"] = {"TailoringTab-Azure Silk Belt","TailoringTab-Crimson Silk Belt","TailoringTab-Spider Belt","TailoringTab-Earthen Silk Belt","TailoringTab-Star Belt"}
-["Fire Oil"] = {"TailoringTab-Crimson Silk Cloak","TailoringTab-Crimson Silk Shoulders","TailoringTab-Crimson Silk Gloves"}
-["Mana Potion"] = {"TailoringTab-Long Silken Cloak","TailoringTab-Crimson Silk Robe"}
-["Elemental Fire"] = {"TailoringTab-Robe of Power","TailoringTab-Crimson Silk Robe","TailoringTab-Crimson Silk Gloves","TailoringTab-Cloak of Fire"}
-["Elemental Air"] = {"TailoringTab-Robe of Power"}
-["Frost Oil"] = {"TailoringTab-Icy Cloak"}
-["Naga Scale"] = {"TailoringTab-Azure Shoulders"}
-["Citrine"] = {"TailoringTab-Star Belt"}
-["Thick Leather"] = {"TailoringTab-Crimson Silk Gloves","TailoringTab-Black Mageweave Boots","TailoringTab-Shadoweave Boots","TailoringTab-Dress Shoes"}
-["Shadow Silk"] = {"TailoringTab-Shadoweave Pants","TailoringTab-Shadoweave Robe","TailoringTab-Shadoweave Gloves","TailoringTab-Shadoweave Shoulders","TailoringTab-Shadoweave Boots"
-,"TailoringTab-Shadoweave Mask"}
-["Wildvine"] = {"TailoringTab-Dreamweave Gloves","TailoringTab-Dreamweave Vest","TailoringTab-Dreamweave Circlet"}
-["Heart of the Wild"] = {"TailoringTab-Dreamweave Gloves","TailoringTab-Dreamweave Vest","TailoringTab-Dreamweave Circlet"}
-["Heart of Fire"] = {"TailoringTab-Cindercloth Robe","TailoringTab-Cindercloth Vest","TailoringTab-Cindercloth Gloves","TailoringTab-Cloak of Fire"}
-["Runecloth"] = {"TailoringTab-Bolt of Runecloth"}
-["Truesilver Bar"] = {"TailoringTab-Dreamweave Circlet"}
-["Jade"] = {"TailoringTab-Dreamweave Circlet"}
-["Firebloom"] = {"TailoringTab-Festival Dress","TailoringTab-Festival Suit"}
-["Felcloth"] = {"TailoringTab-Mooncloth","TailoringTab-Felcloth Pants","TailoringTab-Felcloth Bag","TailoringTab-Robe of Winter Night","TailoringTab-Felcloth Boots","TailoringTab-Felcloth Hood"
-,"TailoringTab-Core Felcloth Bag"}
-["Globe of Water"] = {"TailoringTab-Frostweave Robe"}
-["Vision Dust"] = {"TailoringTab-Enchanted Mageweave Pouch"}
-["Ironweb Spider Silk"] = {"TailoringTab-Runecloth Robe","TailoringTab-Runecloth Tunic","TailoringTab-Runecloth Cloak","TailoringTab-Felcoth Bag","TailoringTab-Runecloth Pants"
-,"TailoringTab-Argent Boots","TailoringTab-Wisdom of the Timbermaw","TailoringTab-Core Felcloth Bag","TailoringTab-Flarecore Leggings","TailoringTab-Flarecore Robe"
-,"TailoringTab-Glacial Cloak","TailoringTab-Glacial Gloves","TailoringTab-Glacial Vest","TailoringTab-Glacial Wrists"}
-["Rugged Leather"] = {"TailoringTab-Soul Pouch","TailoringTab-Runecloth Bag","TailoringTab-Gordok Ogre Suit","TailoringTab-Runecloth Boots","TailoringTab-Felcloth Boots"}
-["Ichor of Undeath"] = {"TailoringTab-Soul Pouch"}
-["Ghost Dye"] = {"TailoringTab-Ghostweave Belt","TailoringTab-Ghostweave Gloves","TailoringTab-Ghostweave Vest","TailoringTab-Ghostweave Pants","TailoringTab-Belt of the Archmage"
-,"TailoringTab-Gloves of Spell Mastery","TailoringTab-Truefaith Vestments"}
-["Gold Bar"] = {"TailoringTab-Brightcloth Gloves", "TailoringTab-Brightcloth Robe","TailoringTab-Brightcloth Cloak",""TailoringTab-Brightcloth Pants"}
-["Ogre Tannin"] = {"TailoringTab-Gordok Ogre Suit"}
-["Essence of Fire"] = {"AlchemyTab-Transmute: Fire to Earth","BlacksmithTab-Sulfuron Hammer","BlacksmithTab-Blazing Rapier","BlacksmithTab-Fiery Plate Gauntlets","EnchantingTab - Enchant Gloves-Fire Power","EnchantingTab-Enchant Weapon - Fiery Weapon","EnchantingTab-Smoking Heart of the Mountain","EngineeringTab-High-powered Flashlight","EngineeringTab-Gyrofreeze Ice Reflector","EngineeringTab-Flawless Arcanite Rifle","EngineeringTab-Fused Wiring","JewelcraftingTab-Band of Natural Fire","TailoringTab-Cloak of Fire","TailoringTab-Cindercloth Cloak","TailoringTab-Cindercloth Pants","TailoringTab-Belt of the Archmage","TailoringTab-Core Felcloth Bag"
-,"TailoringTab-Flarecore Gloves","TailoringTab-Flarecore Leggings","TailoringTab-Flarecore Robe","TailoringTab-Flarecore Wraps","TailoringTab-Robe of the Archmage",""TailoringTab-Robe of the Void"
-,"TailoringTab-Inferno Gloves"}
-["Purple Lotus"] = {"TailoringTab-Cenarion Herb Bag"}
-["Greater Eternal Essence"] = {"TailoringTab-Enchanted Runecloth Bag"}
-["Dream Dust"] = {"TailoringTab-Wizardweave Leggings"}
-["Enchanted Leather"] = {"BlacksmithTab-Black Grasp of the Destroyer","BlacksmithTab-Obsidian Mail Tunic","BlacksmithTab-Sageblade","BlacksmithTab-Annihilator","BlacksmithTab-Arcanite Champion",
-"BlacksmithTab-Arcanite Reaper","BlacksmithTab-Bloodsoul Gauntlets","BlacksmithTab-Dark Iron Destroyer","BlacksmithTab-Dark Iron Reaver","BlacksmithTab-Darkrune Gauntlets","BlacksmithTab-Frostguard","BlacksmithTab-Hammer of the Titans","BlacksmithTab-Heartseeker","BlacksmithTab-Light Obsidian Belt","BlacksmithTab-Masterwork Stormhammer","EngineeringTab-Spellpower Goggles Xtreme Plus","EngineeringTab-Master Engineer's Goggles","EngineeringTab-Flawless Arcanite Rifle","EngineeringTab-Bloodvine Goggles","LeatherworkingTab-Polar Bracers",
-"LeatherworkingTab-Polar Gloves","LeatherworkingTab-Polar Tunic","LeatherworkingTab-Shifting Cloak","LeatherworkingTab-Blue Dragonscale Shoulders","LeatherworkingTab-Bramblewood Belt",
-"LeatherworkingTab-Bramblewood Boots","LeatherworkingTab-Golden Mantle of the Dawn","LeatherworkingTab-Stormshroud Gloves","LeatherworkingTab-Timbermaw Brawlers","LeatherworkingTab-Runic Leather Armor","LeatherworkingTab-Runic Leather Pants","LeatherworkingTab-Runic Leather Shoulders","TailoringTab-Felcoth Bag","TailoringTab-Argent Boots","TailoringTab-Flarecore Gloves","TailoringTab-Flarecore Mantle","TailoringTab-Flarecore Wraps","TailoringTab-Gloves of Spell Mastery","TailoringTab-Mooncloth Circlet","TailoringTab-Runed Stygian Belt"
-,"TailoringTab-Big Bag of Enchantment"}
-["Dark Rune"] = {"TailoringTab-Felcloth Bag"}
-["Essence of Undeath"] = {"TailoringTab-Robe of Winter Night"}
-["Essence of Water"] = {"AlchemyTab-Transmute: Water to Air","AlchemyTab-Transmute: Water to Undeath","BlacksmithTab-Icebane Bracers","BlacksmithTab-Icebane Breastplate","BlacksmithTab-Icebane Gauntlets","BlacksmithTab-Dawnbringer Shoulders","BlacksmithTab-Enchanted Thorium Breastplate","BlacksmithTab-Enchanted Thorium Leggings","BlacksmithTab-Frostguard","BlacksmithTab-Storm Gauntlets","EnchantingTab-Enchant Bracer - Mana Regeneration","EnchantingTab-Enchant Gloves - Frost Power", "EnchantingTab-Enchant Weapon - Healing Power","EnchantingTab-Enchant Weapon - Icy Chill","EngineeringTab-Hyper-Radiant Flame Reflector","LeatherworkingTab-Frostsaber Leggings","LeatherworkingTab-Frostsaber Gloves","LeatherworkingTab-Frostsaber Boots","LeatherworkingTab-Dawn Treaders","LeatherworkingTab-Polar Tunic","LeatherworkingTab-Polar Gloves","LeatherworkingTab-Polar Bracers","LeatherworkingTab-Icy Scale Gauntlets","LeatherworkingTab-Icy Scale Breastplate","LeatherworkingTab-Icy Scale Bracers","TailoringTab-Robe of Winter Night","TailoringTab-Belt of the Archmage","TailoringTab-Glacial Cloak","TailoringTab-Glacial Gloves","TailoringTab-Glacial Vest"
-,"TailoringTab-Glacial Wrists","TailoringTab-Robe of the Archmage"}
-["Mooncloth"] = {"TailoringTab-Mooncloth Boots","TailoringTab-Mooncloth Leggings","TailoringTab-Belt of the Archmage","TailoringTab-Flarecore Leggings","TailoringTab-Flarecore Robe"
-,"TailoringTab-Flarecore Wraps","TailoringTab-Gloves of Spell Mastery","TailoringTab-Truefaith Vestments","TailoringTab-Argent Shoulders","TailoringTab-Bloodvine Boots","TailoringTab-Bloodvine Leggings"
-,"TailoringTab-Bloodvine Vest","TailoringTab-Bottomless Bag","TailoringTab-Living Breastplate","TailoringTab-Mantle of the Timbermaw","TailoringTab-Mooncloth Circlet","TailoringTab-Mooncloth Gloves"
-,"TailoringTab-Mooncloth Robe","TailoringTab-Mooncloth Shoulders","TailoringTab-Mooncloth Vest","TailoringTab-Sylvan Crown","TailoringTab-Mooncloth Bag","TailoringTab-Satchel of Cenarius"}
-["Black Pearl"] = {"TailoringTab-Mooncloth Boots"}
-["Golden Pearl"] = {"EnchantingTab-Enchant Weapon - Spellpower","TailoringTab-Argent Boots","TailoringTab-Gloves of Spell Mastery","TailoringTab-Truefaith Vestments","TailoringTab-Mooncloth Gloves"
-,"TailoringTab-Mooncloth Robe"}
-["Guardian Stone"] = {"TailoringTab-Argent Boots"}
-["Essence of Earth"] = {"AlchemyTab-Transmute: Earth to Life","AlchemyTab-Transmute: Earth to Water","BlacksmithTab-Thorium Shield Spike","BlacksmithTab-Heavy Timbermaw Belt","BlacksmithTab-Jagged Obsidian Shield","BlacksmithTab-Stronghold Gauntlets","BlacksmithTab-Thick Obsidian Breastplate","BlacksmithTab-Titanic Leggings","BlacksmithTab-Enchanted Thorium Breastplate","BlacksmithTab-Enchanted Thorium Helm","BlacksmithTab-Hammer of the Titans","BlacksmithTab-Heavy Obsidian Belt","BlacksmithTab-Heavy Timbermaw Boots","BlacksmithTab-Masterwork Stormhammer","EnchantingTab-Enchant Weapon - Strength","EngineeringTab-Force Reactive Disk","EngineeringTab-Biznicks 247x128 Accurascope","EngineeringTab-Flawless Arcanite Rifle","JewelcraftingTab-Onslaught Ring","LeatherworkingTab-Volcanic Breastplate","LeatherworkingTab-Volcanic Shoulders","TailoringTab-Wisdom of the Timbermaw","TailoringTab-Robe of the Archmage","TailoringTab-Mantle of the Timbermaw"}
-["Living Essence"] = {"TailoringTab-Wisdom of the Timbermaw"}
-["Netherweave Cloth"] = {"TailoringTab-Netherweave Net","TailoringTab-Bolt of Netherweave"}
-["Large Brilliant Shard"] = {"TailoringTab-Belt of the Archmage"}
-["Core Leather"] = {"TailoringTab-Core Felcloth Bag"}
-["Fiery Core"] = {"TailoringTab-Flarecore Gloves","TailoringTab-Flarecore Leggings","TailoringTab-Flarecore Mantle","TailoringTab-Flarecore Robe"}
-["Lava Core"] = {"TailoringTab-Flarecore Leggings","TailoringTab-Flarecore Mantle","TailoringTab-Flarecore Robe"}
-["Frozen Rune"] = {"TailoringTab-Glacial Cloak","TailoringTab-Glacial Gloves","TailoringTab-Glacial Vest","TailoringTab-Glacial Wrists"}
-["Huge Emerald"] = {"BlacksmithTab-Runic Plate Helm","BlacksmithTab-Wildthorn Mail","BlacksmithTab-Serenity","BlacksmithTab-Masterwork Stormhammer","BlacksmithTab-Helm of the Great Chief"
-,"BlacksmithTab-Enchanted Thorium Leggings","BlacksmithTab-Enchanted Thorium Breastplate","BlacksmithTab-Enchanted Battlehammer","BlacksmithTab-Dawnbringer Shoulders","BlacksmithTab-Annihilator"
-,"BlacksmithTab-Thick Obsidian Breastplate","BlacksmithTab-Nightfall","BlacksmithTab-Invulnerable Mail","BlacksmithTab-Master Engineer's Goggles","JewelcraftingTab-Emerald Crown of Destruction"
-,"JewelcraftingTab-Living Emerald Pendant","JewelcraftingTab-Emerald Lion Ring","JewelcraftingTab-Figurine-Emerald Owl","TailoringTab-Gloves of Spell Mastery"}
-["Essence of Air"] = {"AlchemyTab-Transmute: Air to Fire","EnchantingTab-Enchant 2H Weapon - Agility", "EnchantingTab-Enchant Weapon - Agility","EnchantingTab-Enchant Weapon - Icy Chill","EngineeringTab-Force Reactive Disk","LeatherworkingTab-Mongoose Boots","LeatherworkingTab-Stormshroud Armor","LeatherworkingTab-Stormshroud GLoves","LeatherworkingTab-Stormshroud Pants","LeatherworkingTab-Stormshroud Shoulders"}
+["Linen Cloth"] = {"TailoringTab~Bolt of Linen Cloth"}
+["Light Leather"] = {"TailoringTab~Simple Linen Boots~Linen Boots~Barbaric Linen Vest~Soft-soled Linen Boots~Red Woolen Boots~Woolen Boots"}
+["Wool Cloth"] = {"TailoringTab~Bolt of Woolen Cloth"} 
+["Small Lustrous Pearl"] = {"TailoringTab~Pearl-clasped Cloak~Heavy Woolen Cloak"}
+["Medium Leather"] = {"TailoringTab~Reinforced Woolen Shoulders~Spidersilk Boots"}
+["Silk Cloth"] = {"TailoringTab~Bolt of Silk Cloth"}
+["Spider's Silk"] = {"TailoringTab~Spidersilk Boots~Spidersilk Drape~Lesser Wizard's Robe~Spider Silk Slippers~Robes of Arcana"}
+["Iridescent Pearl"] = {"TailoringTab~Spidersilk Boots~Phoenix Gloves~Phoenix Pants"}
+["Elixir of Wisdom"] = {"TailoringTab~Gloves of Meditation"}
+["Heavy Leather"] = {"TailoringTab~Azure Silk Gloves~Hands of Darkness~Truefaith Gloves~Small Silk Pack~Green Silk Pack~Earthen Silk Belt~Star Belt"}
+["Shadow Protection Potion"] = {"TailoringTab~Hands of Darkness"}
+["Healing Potion"] = {"TailoringTab~Truefaith Gloves"}
+["Thick Spider's Silk"] = {"TailoringTab~Enchanter's Cowl~Boots of the Enchanter~Spider Belt~Icy Cloak"}
+["Elemental Earth"] = {"TailoringTab~Earthen Vest~Robe of Power~Earthen Silk Belt"}
+["Shadow Oil"] = {"TailoringTab~Shadow Hood"}
+["Mageweave Cloth"] = {"TailoringTab~Bolt of Mageweave"}
+["Elemental Water"] = {"TailoringTab~Azure Silk Belt~Robe of Power}
+["Iron Buckle"] = {"TailoringTab~Azure Silk Belt~Crimson Silk Belt~Spider Belt~Earthen Silk Belt~Star Belt"}
+["Fire Oil"] = {"TailoringTab~Crimson Silk Cloak~Crimson Silk Shoulders~Crimson Silk Gloves"}
+["Mana Potion"] = {"TailoringTab~Long Silken Cloak~Crimson Silk Robe"}
+["Elemental Fire"] = {"TailoringTab~Robe of Power~Crimson Silk Robe~Crimson Silk Gloves~Cloak of Fire"}
+["Elemental Air"] = {"TailoringTab~Robe of Power"}
+["Frost Oil"] = {"TailoringTab~Icy Cloak"}
+["Naga Scale"] = {"TailoringTab~Azure Shoulders"}
+["Citrine"] = {"TailoringTab~Star Belt"}
+["Thick Leather"] = {"TailoringTab~Crimson Silk Gloves~Black Mageweave Boots~Shadoweave Boots~Dress Shoes"}
+["Shadow Silk"] = {"TailoringTab~Shadoweave Pants~Shadoweave Robe~Shadoweave Gloves~Shadoweave Shoulders~Shadoweave Boots~Shadoweave Mask"}
+["Wildvine"] = {"TailoringTab~Dreamweave Gloves~Dreamweave Vest~Dreamweave Circlet"}
+["Heart of the Wild"] = {"TailoringTab~Dreamweave Gloves~Dreamweave Vest~Dreamweave Circlet"}
+["Heart of Fire"] = {"TailoringTab~Cindercloth Robe~Cindercloth Vest~Cindercloth Gloves~Cloak of Fire"}
+["Runecloth"] = {"TailoringTab~Bolt of Runecloth"}
+["Truesilver Bar"] = {"TailoringTab~Dreamweave Circlet"}
+["Jade"] = {"TailoringTab~Dreamweave Circlet"}
+["Firebloom"] = {"TailoringTab~Festival Dress~Festival Suit"}
+["Felcloth"] = {"TailoringTab~Mooncloth~Felcloth Pants~Felcloth Bag~Robe of Winter Night~Felcloth Boots~Felcloth Hood~Core Felcloth Bag"}
+["Globe of Water"] = {"TailoringTab~Frostweave Robe"}
+["Vision Dust"] = {"TailoringTab~Enchanted Mageweave Pouch"}
+["Ironweb Spider Silk"] = {"TailoringTab~Runecloth Robe~Runecloth Tunic~Runecloth Cloak~Felcoth Bag~Runecloth Pants~Argent Boots~Wisdom of the Timbermaw~Core Felcloth Bag~Flarecore Leggings~Flarecore Robe~Glacial Cloak~Glacial Gloves~Glacial Vest~Glacial Wrists"}
+["Rugged Leather"] = {"TailoringTab~Soul Pouch~Runecloth Bag~Gordok Ogre Suit~Runecloth Boots~Felcloth Boots"}
+["Ichor of Undeath"] = {"TailoringTab~Soul Pouch"}
+["Ghost Dye"] = {"TailoringTab~Ghostweave Belt~Ghostweave Gloves~Ghostweave Vest~Ghostweave Pants~Belt of the Archmage~Gloves of Spell Mastery~Truefaith Vestments"}
+["Gold Bar"] = {"TailoringTab~Brightcloth Gloves~Brightcloth Robe~Brightcloth Cloak~Brightcloth Pants"}
+["Ogre Tannin"] = {"TailoringTab~Gordok Ogre Suit"}
+["Essence of Fire"] = {"AlchemyTab~Transmute: Fire to Earth","BlacksmithTab~Sulfuron Hammer~Blazing Rapier~Fiery Plate Gauntlets","EnchantingTab~Enchant Gloves-Fire Power~Enchant Weapon - Fiery Weapon~Smoking Heart of the Mountain","EngineeringTab~High-powered Flashlight~Gyrofreeze Ice Reflector~Flawless Arcanite Rifle~Fused Wiring","JewelcraftingTab~Band of Natural Fire","TailoringTab~Cloak of Fire~Cindercloth Cloak~Cindercloth Pants~Belt of the Archmage~Core Felcloth Bag~Flarecore Gloves~Flarecore Leggings~Flarecore Robe~Flarecore Wraps~Robe of the Archmage~Robe of the Void~Inferno Gloves"}
+["Purple Lotus"] = {"TailoringTab~Cenarion Herb Bag"}
+["Greater Eternal Essence"] = {"TailoringTab~Enchanted Runecloth Bag"}
+["Dream Dust"] = {"TailoringTab~Wizardweave Leggings"}
+["Enchanted Leather"] = {"BlacksmithTab~Black Grasp of the Destroyer~Obsidian Mail Tunic~Sageblade~Annihilator~Arcanite Champion~Arcanite Reaper~Bloodsoul Gauntlets~Dark Iron Destroyer~Dark Iron Reaver~Darkrune Gauntlets~Frostguard~Hammer of the Titans~Heartseeker~Light Obsidian Belt~Masterwork Stormhammer","EngineeringTab~Spellpower Goggles Xtreme Plus~Master Engineer's Goggles~Flawless Arcanite Rifle~Bloodvine Goggles","LeatherworkingTab~Polar Bracers~Polar Gloves~Polar Tunic~Shifting Cloak~Blue Dragonscale Shoulders~Bramblewood Belt~Bramblewood Boots~Golden Mantle of the Dawn~Stormshroud Gloves~Timbermaw Brawlers~Runic Leather Armor~Runic Leather Pants~Runic Leather Shoulders","TailoringTab~Felcoth Bag~Argent Boots~Flarecore Gloves~Flarecore Mantle~Flarecore Wraps~Gloves of Spell Mastery~Mooncloth Circlet~Runed Stygian Belt~Big Bag of Enchantment"}
+["Dark Rune"] = {"TailoringTab~Felcloth Bag"}
+["Essence of Undeath"] = {"TailoringTab~Robe of Winter Night"}
+["Essence of Water"] = {"AlchemyTab~Transmute: Water to Air~Transmute: Water to Undeath","BlacksmithTab~Icebane Bracers~Icebane Breastplate~Icebane Gauntlets~Dawnbringer Shoulders~Enchanted Thorium Breastplate~Enchanted Thorium Leggings~Frostguard~Storm Gauntlets","EnchantingTab~Enchant Bracer - Mana Regeneration~Enchant Gloves - Frost Power~Enchant Weapon - Healing Power~Enchant Weapon - Icy Chill","EngineeringTab~Hyper-Radiant Flame Reflector","LeatherworkingTab~Frostsaber Leggings~Frostsaber Gloves~Frostsaber Boots~Dawn Treaders~Polar Tunic~Polar Gloves~Polar Bracers~Icy Scale Gauntlets~Icy Scale Breastplate~Icy Scale Bracers","TailoringTab~Robe of Winter Night~Belt of the Archmage~Glacial Cloak~Glacial Gloves~Glacial Vest~Glacial Wrists~Robe of the Archmage"}
+["Mooncloth"] = {"TailoringTab~Mooncloth Boots~Mooncloth Leggings~Belt of the Archmage~Flarecore Leggings~Flarecore Robe~Flarecore Wraps~Gloves of Spell Mastery~Truefaith Vestments~Argent Shoulders~Bloodvine Boots~Bloodvine Leggings~Bloodvine Vest~Bottomless Bag~Living Breastplate~Mantle of the Timbermaw~Mooncloth Circlet~Mooncloth Gloves~Mooncloth Robe~Mooncloth Shoulders~Mooncloth Vest~Sylvan Crown~Mooncloth Bag~Satchel of Cenarius"}
+["Black Pearl"] = {"TailoringTab~Mooncloth Boots"}
+["Golden Pearl"] = {"EnchantingTab~Enchant Weapon - Spellpower","TailoringTab~Argent Boots~Gloves of Spell Mastery~Truefaith Vestments~Mooncloth Gloves~Mooncloth Robe"}
+["Guardian Stone"] = {"TailoringTab~Argent Boots"}
+["Essence of Earth"] = {"AlchemyTab~Transmute: Earth to Life~Transmute: Earth to Water","BlacksmithTab~Thorium Shield Spike~Heavy Timbermaw Belt~Jagged Obsidian Shield~Stronghold Gauntlets~Thick Obsidian Breastplate~Titanic Leggings~Enchanted Thorium Breastplate~Enchanted Thorium Helm~Hammer of the Titans~Heavy Obsidian Belt~Heavy Timbermaw Boots~Masterwork Stormhammer","EnchantingTab~Enchant Weapon - Strength","EngineeringTab~Force Reactive Disk~Biznicks 247x128 Accurascope~Flawless Arcanite Rifle","JewelcraftingTab~Onslaught Ring","LeatherworkingTab~Volcanic Breastplate~Volcanic Shoulders","TailoringTab~Wisdom of the Timbermaw~Robe of the Archmage~Mantle of the Timbermaw"}
+["Living Essence"] = {"TailoringTab~Wisdom of the Timbermaw"}
+["Netherweave Cloth"] = {"TailoringTab~Netherweave Net~Bolt of Netherweave"}
+["Large Brilliant Shard"] = {"TailoringTab~Belt of the Archmage"}
+["Core Leather"] = {"TailoringTab~Core Felcloth Bag"}
+["Fiery Core"] = {"TailoringTab~Flarecore Gloves~Flarecore Leggings~Flarecore Mantle~Flarecore Robe"}
+["Lava Core"] = {"TailoringTab~Flarecore Leggings~Flarecore Mantle~Flarecore Robe"}
+["Frozen Rune"] = {"TailoringTab~Glacial Cloak~Glacial Gloves~Glacial Vest~Glacial Wrists"}
+["Huge Emerald"] = {"BlacksmithTab~Runic Plate Helm~Wildthorn Mail~Serenity~Masterwork Stormhammer~Helm of the Great Chief~Enchanted Thorium Leggings~Enchanted Thorium Breastplate~Enchanted Battlehammer~Dawnbringer Shoulders~Annihilator~Thick Obsidian Breastplate~Nightfall~Invulnerable Mail","EngineeringTab~Master Engineer's Goggles","JewelcraftingTab~Emerald Crown of Destruction~Living Emerald Pendant~Emerald Lion Ring~Figurine-Emerald Owl","TailoringTab~Gloves of Spell Mastery"}
+["Essence of Air"] = {"AlchemyTab~Transmute: Air to Fire","EnchantingTab~Enchant 2H Weapon - Agility~Enchant Weapon - Agility~Enchant Weapon - Icy Chill","EngineeringTab~Force Reactive Disk","LeatherworkingTab~Mongoose Boots~Stormshroud Armor~Stormshroud Gloves~Stormshroud Pants~Stormshroud Shoulders", "TailoringTab~Robe of the Archmage"}
 ["Pandaren Peach"] = {"CookingTab~Dried Peaches~Four Senses Brew~Peach Pie~Sliced Peaches~Tangy Yogurt"}
 ["Ice Cold Milk"] = {"CookingTab~Bread of the Dead~Clam Chowder~Delicious Chocolate Cake~Winter Veil Egg Nog"}
 ["Raw Brilliant Smallfish"] = {"CookingTab~Brilliant Smallfish"}
